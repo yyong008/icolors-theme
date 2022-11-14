@@ -1,0 +1,35 @@
+export default interface SymbolIcon {
+  'symbolIcon.arrayForeground': string
+  'symbolIcon.booleanForeground': string
+  'symbolIcon.classForeground': string
+  'symbolIcon.colorForeground': string
+  'symbolIcon.constantForeground': string
+  'symbolIcon.constructorForeground': string
+  'symbolIcon.enumeratorForeground': string
+  'symbolIcon.enumeratorMemberForeground': string
+  'symbolIcon.eventForeground': string
+  'symbolIcon.fieldForeground': string
+  'symbolIcon.fileForeground': string
+  'symbolIcon.folderForeground': string
+  'symbolIcon.functionForeground': string
+  'symbolIcon.interfaceForeground': string
+  'symbolIcon.keyForeground': string
+  'symbolIcon.keywordForeground': string
+  'symbolIcon.methodForeground': string
+  'symbolIcon.moduleForeground': string
+  'symbolIcon.namespaceForeground': string
+  'symbolIcon.nullForeground': string
+  'symbolIcon.numberForeground': string
+  'symbolIcon.objectForeground': string
+  'symbolIcon.operatorForeground': string
+  'symbolIcon.packageForeground': string
+  'symbolIcon.propertyForeground': string
+  'symbolIcon.referenceForeground': string
+  'symbolIcon.snippetForeground': string
+  'symbolIcon.stringForeground': string
+  'symbolIcon.structForeground': string
+  'symbolIcon.textForeground': string
+  'symbolIcon.typeParameterForeground': string
+  'symbolIcon.unitForeground': string
+  'symbolIcon.variableForeground': string
+}

@@ -1,0 +1,130 @@
+{
+  "name": "i-colors",
+  "displayName": "iColors",
+  "version": "0.0.1",
+  "description": "a vscode theme with level color system",
+  "type": "module",
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "iColor Dark Blue",
+        "uiTheme": "vs-dark",
+        "path": "./themes/iColorDarkBlue.json"
+      },
+      {
+        "label": "iColor Dark Cyan",
+        "uiTheme": "vs-dark",
+        "path": "./themes/iColorDarkCyan.json"
+      },
+      {
+        "label": "iColor Dark GeekBlue",
+        "uiTheme": "vs-dark",
+        "path": "./themes/iColorDarkGeekBlue.json"
+      },
+      {
+        "label": "iColor Dark Gold",
+        "uiTheme": "vs-dark",
+        "path": "./themes/iColorDarkGold.json"
+      },
+      {
+        "label": "iColor Dark Green",
+        "uiTheme": "vs-dark",
+        "path": "./themes/iColorDarkGreen.json"
+      },
+      {
+        "label": "iColor Dark Lime",
+        "uiTheme": "vs-dark",
+        "path": "./themes/iColorDarkLime.json"
+      },
+      {
+        "label": "iColor Dark Magenta",
+        "uiTheme": "vs-dark",
+        "path": "./themes/iColorDarkMagenta.json"
+      },
+      {
+        "label": "iColor Dark Organe",
+        "uiTheme": "vs-dark",
+        "path": "./themes/iColorDarkOrgane.json"
+      },
+      {
+        "label": "iColor Dark Purple",
+        "uiTheme": "vs-dark",
+        "path": "./themes/iColorDarkPurple.json"
+      },
+      {
+        "label": "iColor Dark Red",
+        "uiTheme": "vs-dark",
+        "path": "./themes/iColorDarkRed.json"
+      },
+      {
+        "label": "iColor Dark Volcano",
+        "uiTheme": "vs-dark",
+        "path": "./themes/iColorDarkVolcano.json"
+      },
+      {
+        "label": "iColor Dark Yellow",
+        "uiTheme": "vs-dark",
+        "path": "./themes/iColorDarkYellow.json"
+      }
+    ]
+  },
+  "scripts": {
+    "dev": "esno src/index.ts ",
+    "lint": "eslint --ext .ts,.js,.tsx,.jsx .",
+    "lint:fix": "eslint --ext .ts,.js,.tsx,.jsx . --fix",
+    "stylelint": "stylelint ./src/**/*.{css,less,scss,sass}",
+    "stylelint:fix": "stylelint ./src/**/*.{css,less,scss,sass} --fix",
+    "lint-staged": "lint-staged",
+    "prepare": "husky install",
+    "postinstallmac": "git config core.hooksPath .husky && chmod 777 .husky/*",
+    "commit": "git add . && cz",
+    "test": "jest"
+  },
+  "keywords": [
+    "vscode",
+    "theme",
+    "textmate",
+    "colors",
+    "typescript"
+  ],
+  "author": "mg",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@types/node": "18.8.1",
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "@typescript-eslint/parser": "^5.33.1",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "esno": "^0.16.3",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.10.0",
+    "stylelint-config-prettier": "9.0.3",
+    "stylelint-prettier": "2.0.0",
+    "ts-node": "10.9.1",
+    "typescript": "^4.8.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "@jest/globals": "^29.3.1",
+    "@types/jest": "^29.2.2",
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.3"
+  }
+}
