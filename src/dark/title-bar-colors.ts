@@ -6,11 +6,11 @@ import colors, {
 } from '../designs/index.js'
 
 const titleBar = (): Partial<TitleBar> => ({
-  ['titleBar.activeBackground']: mapColorsWithRuntimeWeight('600'),
+  ['titleBar.activeBackground']: colors.grayColors1000,
   ['titleBar.activeForeground']: mapColorsWithRuntimeWeight('500'),
   ['titleBar.inactiveBackground']: colors.grayColors1000,
-  ['titleBar.inactiveForeground']: mapColorsReverseWithRuntimeWeight('500'),
-  ['titleBar.border']: colors.redColors400
+  ['titleBar.inactiveForeground']: mapColorsWithRuntimeWeight('700'),
+  ['titleBar.border']: colors.grayColors1100
 })
 
 export default { titleBar }
