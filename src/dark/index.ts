@@ -16,7 +16,7 @@ const sprObjFromFn = async (path: string) => {
   return returnObj
 }
 
-export default async function createThemeColors() {
+export default async function createThemeColors(isFilterNull = true) {
   const _colors = {
     ...(await sprObjFromFn('./action-colors')),
     ...(await sprObjFromFn('./activity-bar')),
@@ -59,11 +59,17 @@ export default async function createThemeColors() {
     ...(await sprObjFromFn('./tab')),
     ...(await sprObjFromFn('./terminal')),
     ...(await sprObjFromFn('./testing-color')),
+    ...(await sprObjFromFn('./text-colors')),
+    ...(await sprObjFromFn('./title-bar-colors')),
     ...(await sprObjFromFn('./tree')),
     ...(await sprObjFromFn('./welcome-page-colors')),
     ...(await sprObjFromFn('./widget')),
     ...(await sprObjFromFn('./window'))
   }
 
-  return removeNullStrAttr(_colors)
+  if (isFilterNull) {
+    return removeNullStrAttr(_colors)
+  }
+
+  return _colors
 }
