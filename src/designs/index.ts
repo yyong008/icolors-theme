@@ -52,4 +52,33 @@ export const mapColorsReverseWithRuntimeWeightFn = (weight: weight1000) => {
   return () => `${mapColorsReverse(`${getRuntimeColors()}${weight}`)}`
 }
 
+// alpha
+export const mapColorsWithRuntimeWeightAplha = (
+  weight: weight1000,
+  alpha: string
+) => {
+  return `${mapColors(`${getRuntimeColors()}${weight}`)}${alpha}`
+}
+
+export const mapColorsReverseWithRuntimeWeightAlpha = (
+  weight: weight1000,
+  alpha: string
+) => {
+  return `${mapColorsReverse(`${getRuntimeColors()}${weight}`)}${alpha}`
+}
+
+export const mapColorsWithRuntimeWeightFnAlpha = (
+  weight: weight1000,
+  alpha: string
+) => {
+  return () => `${mapColors(`${getRuntimeColors()}${weight}`)}${alpha}`
+}
+
+export const mapColorsReverseWithRuntimeWeightFnAlpha = (
+  weight: weight1000,
+  alpha: string
+) => {
+  return () => `${mapColorsReverse(`${getRuntimeColors()}${weight}`)}${alpha}`
+}
+
 export default colors
