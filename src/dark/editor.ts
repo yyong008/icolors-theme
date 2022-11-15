@@ -13,16 +13,19 @@ import type {
   EditorCommentsWidget
 } from '../types/Editor'
 
-import colors, { mapColorsWithRuntimeWeight } from '../designs/index'
+import colors, {
+  mapColorsReverseWithRuntimeWeight,
+  mapColorsWithRuntimeWeight
+} from '../designs/index'
 
 const editor = (): Partial<Editor> => ({
-  ['editor.background']: colors.grayColors1100,
+  ['editor.background']: colors.grayColors1200,
   ['editor.foreground']: mapColorsWithRuntimeWeight('400'),
   ['editor.selectionHighlightBackground']: '#575b6180',
   ['editor.selectionBackground']: '#878b9180',
   ['editor.wordHighlightBackground']: '#4a4a7680',
   ['editor.wordHighlightStrongBackground']: '#6a6a9680',
-  ['editor.lineHighlightBackground']: '#3e3d32'
+  ['editor.lineHighlightBackground']: '#3e3d3290'
 })
 
 const editorCursor = (): Partial<EditorCursor> => ({
@@ -62,8 +65,8 @@ const editorSuggestWidget = (): Partial<EditorSuggestWidget> => ({
 })
 
 const editorLineNumber = (): Partial<EditorLineNumber> => ({
-  ['editorLineNumber.foreground']: '#90908a',
-  ['editorLineNumber.activeForeground']: '#c2c2bf'
+  ['editorLineNumber.foreground']: colors.grayColors900,
+  ['editorLineNumber.activeForeground']: mapColorsWithRuntimeWeight('600')
 })
 
 export const editorDebug = (): Partial<EditorDebug> => ({
@@ -92,5 +95,6 @@ export default {
   editorHoverWidget,
   editorSuggestWidget,
   editorLineNumber,
+  editorDebug,
   editorCommentsWidget
 }
