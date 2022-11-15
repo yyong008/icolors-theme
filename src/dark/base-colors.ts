@@ -10,4 +10,26 @@ const baseColors = (): Partial<BaseColors> => ({
   errorForeground: colors.redColors600
 })
 
-export default { baseColors }
+const baseColorsWidget = () => ({
+  'widget.shadow': ''
+})
+
+const baseColorsSelection = () => ({
+  'selection.shadow': ''
+})
+
+const baseColorsIcon = () => ({
+  'icon.foreground': ''
+})
+
+const baseColorsSash = () => ({
+  'sash.hoverBorder': ''
+})
+
+export default {
+  baseColors,
+  baseColorsWidget,
+  baseColorsSelection,
+  baseColorsIcon,
+  baseColorsSash
+}
