@@ -12,7 +12,8 @@ const propsScopes: RawAtomTheme[] = [
   {
     name: 'json::key',
     scope: [],
-    rawScope: ['support.type.property-name'],
+    rawScope: [],
+    extraScope: ['support.type.property-name.json.comments'],
     foreground: mapColorsWithRuntimeWeightFn('600'),
     fontStyle: 'bold'
   },
