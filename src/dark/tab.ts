@@ -6,14 +6,14 @@ const tab = (): Partial<Tab> => ({
   ['tab.activeBackground']: colors.grayColors1100,
   ['tab.unfocusedActiveBackground']: '',
   ['tab.inactiveBackground']: colors.grayColors1000,
-  ['tab.border']: colors.grayColors1100,
+  ['tab.border']: colors.grayColors900,
   ['tab.inactiveForeground']: colors.grayColors600,
   ['tab.activeForeground']: colors.grayColors100,
-  ['tab.lastPinnedBorder']: '',
+  ['tab.lastPinnedBorder']: colors.grayColors900,
   ['tab.activeBorder']: '',
-  ['tab.unfocusedActiveBorder']: '',
+  ['tab.unfocusedActiveBorder']: colors.grayColors900,
   ['tab.activeBorderTop']: mapColorsWithRuntimeWeight('400'),
-  ['tab.unfocusedActiveBorderTop']: '',
+  ['tab.unfocusedActiveBorderTop']: colors.grayColors900,
   ['tab.unfocusedInactiveBackground']: '',
   ['tab.unfocusedActiveForeground']: '',
   ['tab.unfocusedInactiveForeground']: '',
@@ -21,12 +21,12 @@ const tab = (): Partial<Tab> => ({
   ['tab.unfocusedHoverBackground']: '',
   ['tab.hoverForeground']: '',
   ['tab.unfocusedHoverForeground']: '',
-  ['tab.hoverBorder']: colors.grayColors700,
-  ['tab.unfocusedHoverBorder']: colors.grayColors1100,
-  ['tab.activeModifiedBorder']: '',
-  ['tab.inactiveModifiedBorder']: '',
-  ['tab.unfocusedActiveModifiedBorder']: '',
-  ['tab.unfocusedInactiveModifiedBorder']: ''
+  ['tab.hoverBorder']: colors.grayColors900,
+  ['tab.unfocusedHoverBorder']: colors.grayColors900,
+  ['tab.activeModifiedBorder']: colors.grayColors900,
+  ['tab.inactiveModifiedBorder']: colors.grayColors900,
+  ['tab.unfocusedActiveModifiedBorder']: colors.grayColors900,
+  ['tab.unfocusedInactiveModifiedBorder']: colors.grayColors900
 })
 
 export default { tab }

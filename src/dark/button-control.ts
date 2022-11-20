@@ -1,15 +1,15 @@
 import type Button from 'src/types/Button'
 
-import { mapColors, getRuntimeColors } from '../designs/index'
+import colors, { mapColorsWithRuntimeWeight } from '../designs/index'
 
 const button = (): Partial<Button> => ({
-  ['button.background']: `${mapColors(`${getRuntimeColors()}700`)}`,
-  ['button.foreground']: '',
+  ['button.background']: mapColorsWithRuntimeWeight('700'),
+  ['button.foreground']: colors.grayColors100,
   ['button.border']: '',
   ['button.separator']: '',
   ['button.hoverBackground']: '',
   ['button.secondaryForeground']: '',
-  ['button.secondaryBackground']: '',
+  ['button.secondaryBackground']: mapColorsWithRuntimeWeight('600'),
   ['button.secondaryHoverBackground']: ''
 })
 

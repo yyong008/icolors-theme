@@ -12,6 +12,66 @@
   ],
   "contributes": {
     "themes": [
+       {
+        "label": "iColor Light Blue",
+        "uiTheme": "vs",
+        "path": "./themes/iColorLightBlue.json"
+      },
+      {
+        "label": "iColor Light Cyan",
+        "uiTheme": "vs",
+        "path": "./themes/iColorLightCyan.json"
+      },
+      {
+        "label": "iColor Light GeekBlue",
+        "uiTheme": "vs",
+        "path": "./themes/iColorLightGeekBlue.json"
+      },
+      {
+        "label": "iColor Light Gold",
+        "uiTheme": "vs",
+        "path": "./themes/iColorLightGold.json"
+      },
+      {
+        "label": "iColor Light Green",
+        "uiTheme": "vs",
+        "path": "./themes/iColorLightGreen.json"
+      },
+      {
+        "label": "iColor Light Lime",
+        "uiTheme": "vs",
+        "path": "./themes/iColorLightLime.json"
+      },
+      {
+        "label": "iColor Light Magenta",
+        "uiTheme": "vs",
+        "path": "./themes/iColorLightMagenta.json"
+      },
+      {
+        "label": "iColor Light Organe",
+        "uiTheme": "vs",
+        "path": "./themes/iColorLightOrgane.json"
+      },
+      {
+        "label": "iColor Light Purple",
+        "uiTheme": "vs",
+        "path": "./themes/iColorLightPurple.json"
+      },
+      {
+        "label": "iColor Light Red",
+        "uiTheme": "vs",
+        "path": "./themes/iColorLightRed.json"
+      },
+      {
+        "label": "iColor Light Volcano",
+        "uiTheme": "vs",
+        "path": "./themes/iColorLightVolcano.json"
+      },
+      {
+        "label": "iColor Light",
+        "uiTheme": "vs-dark",
+        "path": "./themes/iColorLightYellow.json"
+      },
       {
         "label": "iColor Dark Blue",
         "uiTheme": "vs-dark",
@@ -84,7 +144,7 @@
     "prepare": "husky install",
     "postinstallmac": "git config core.hooksPath .husky && chmod 777 .husky/*",
     "commit": "git add . && cz",
-    "test": "jest"
+    "test": "jest --watch"
   },
   "keywords": [
     "vscode",

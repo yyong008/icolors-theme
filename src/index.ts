@@ -1,26 +1,17 @@
 import type { SystemColorTypes } from './designs/type'
 
 import { createTheme } from './utils/index'
-
-const themesArr = [
-  ['blueColors', 'iColorDarkBlue'],
-  ['geekBlueColors', 'iColorDarkGeekBlue'],
-  ['cyanColors', 'iColorDarkCyan'],
-  ['goldColors', 'iColorDarkGold'],
-  ['greenColors', 'iColorDarkGreen'],
-  ['limeColors', 'iColorDarkLime'],
-  ['magentaColors', 'iColorDarkMagenta'],
-  ['orangeColors', 'iColorDarkOrgane'],
-  ['purpleColors', 'iColorDarkPurple'],
-  ['redColors', 'iColorDarkRed'],
-  ['volcanoColors', 'iColorDarkVolcano'],
-  ['yellowColors', 'iColorDarkYellow']
-]
+import { darkThemesArr, lightThemesArr } from './utils/constants'
 
 async function main() {
-  for (const arr of themesArr) {
+  for (const arr of lightThemesArr) {
     const [runtimeColor, themeColorName] = arr as [SystemColorTypes, string]
-    await createTheme(runtimeColor, themeColorName)
+    await createTheme(runtimeColor, themeColorName, true)
+  }
+
+  for (const arr of darkThemesArr) {
+    const [runtimeColor, themeColorName] = arr as [SystemColorTypes, string]
+    await createTheme(runtimeColor, themeColorName, false)
   }
 }
 

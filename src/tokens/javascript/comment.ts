@@ -1,6 +1,6 @@
 import type { RawAtomTheme } from '../common'
 
-import { mapColorsWithRuntimeWeightFn } from '../../designs/index'
+import colors from '../../designs/index'
 import { gnAtomThemeFns } from '../common'
 import { jsTypes } from '../constants'
 
@@ -14,8 +14,8 @@ const commentScopes: RawAtomTheme[] = [
       'comment.block.documentation',
       'comment.line.shebang'
     ],
-    foreground: mapColorsWithRuntimeWeightFn('400'),
-    fontStyle: ''
+    foreground: colors.grayColors900,
+    fontStyle: 'italic'
   }
 ]
 

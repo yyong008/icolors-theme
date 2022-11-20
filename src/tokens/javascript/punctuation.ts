@@ -1,6 +1,6 @@
 import type { RawAtomTheme } from '../common'
 
-import colors from '../../designs/index'
+import colors, { mapColorsWithRuntimeWeight } from '../../designs/index'
 import { gnAtomThemeFns } from '../common'
 import { jsTypes } from '../constants'
 
@@ -26,7 +26,7 @@ const punctuationScopes: RawAtomTheme[] = [
     name: '(c|m)(j|t)s(x)::comma',
     scope: [],
     rawScope: ['punctuation.separator.comma'],
-    foreground: colors.grayColors1000,
+    foreground: mapColorsWithRuntimeWeight('400'),
     fontStyle: ''
   }
 ]

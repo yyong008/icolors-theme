@@ -142,9 +142,13 @@ it('utils', () => {
       "mapColors": [Function],
       "mapColorsReverse": [Function],
       "mapColorsReverseWithRuntimeWeight": [Function],
+      "mapColorsReverseWithRuntimeWeightAlpha": [Function],
       "mapColorsReverseWithRuntimeWeightFn": [Function],
+      "mapColorsReverseWithRuntimeWeightFnAlpha": [Function],
       "mapColorsWithRuntimeWeight": [Function],
+      "mapColorsWithRuntimeWeightAplha": [Function],
       "mapColorsWithRuntimeWeightFn": [Function],
+      "mapColorsWithRuntimeWeightFnAlpha": [Function],
       "setRuntimeColors": [Function],
     }
   `)

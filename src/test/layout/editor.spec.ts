@@ -14,9 +14,9 @@ describe('editor', () => {
 
     expect(editor).toMatchInlineSnapshot(`
       {
-        "editor.background": "#1f1f1f",
+        "editor.background": "#141414",
         "editor.foreground": "#69c0ff",
-        "editor.lineHighlightBackground": "#3e3d32",
+        "editor.lineHighlightBackground": "#3e3d3290",
         "editor.selectionBackground": "#878b9180",
         "editor.selectionHighlightBackground": "#575b6180",
         "editor.wordHighlightBackground": "#4a4a7680",
@@ -31,9 +31,9 @@ describe('editor', () => {
 
     expect(editor).toMatchInlineSnapshot(`
       {
-        "editor.background": "#1f1f1f",
+        "editor.background": "#141414",
         "editor.foreground": "#5cdbd3",
-        "editor.lineHighlightBackground": "#3e3d32",
+        "editor.lineHighlightBackground": "#3e3d3290",
         "editor.selectionBackground": "#878b9180",
         "editor.selectionHighlightBackground": "#575b6180",
         "editor.wordHighlightBackground": "#4a4a7680",
@@ -48,9 +48,9 @@ describe('editor', () => {
 
     expect(editor).toMatchInlineSnapshot(`
       {
-        "editor.background": "#1f1f1f",
+        "editor.background": "#141414",
         "editor.foreground": "#85a5ff",
-        "editor.lineHighlightBackground": "#3e3d32",
+        "editor.lineHighlightBackground": "#3e3d3290",
         "editor.selectionBackground": "#878b9180",
         "editor.selectionHighlightBackground": "#575b6180",
         "editor.wordHighlightBackground": "#4a4a7680",
@@ -65,9 +65,9 @@ describe('editor', () => {
 
     expect(editor).toMatchInlineSnapshot(`
       {
-        "editor.background": "#1f1f1f",
+        "editor.background": "#141414",
         "editor.foreground": "#ffd666",
-        "editor.lineHighlightBackground": "#3e3d32",
+        "editor.lineHighlightBackground": "#3e3d3290",
         "editor.selectionBackground": "#878b9180",
         "editor.selectionHighlightBackground": "#575b6180",
         "editor.wordHighlightBackground": "#4a4a7680",
@@ -82,9 +82,9 @@ describe('editor', () => {
 
     expect(editor).toMatchInlineSnapshot(`
       {
-        "editor.background": "#1f1f1f",
+        "editor.background": "#141414",
         "editor.foreground": "#95de64",
-        "editor.lineHighlightBackground": "#3e3d32",
+        "editor.lineHighlightBackground": "#3e3d3290",
         "editor.selectionBackground": "#878b9180",
         "editor.selectionHighlightBackground": "#575b6180",
         "editor.wordHighlightBackground": "#4a4a7680",
@@ -99,9 +99,9 @@ describe('editor', () => {
 
     expect(editor).toMatchInlineSnapshot(`
       {
-        "editor.background": "#1f1f1f",
+        "editor.background": "#141414",
         "editor.foreground": "#d3f261",
-        "editor.lineHighlightBackground": "#3e3d32",
+        "editor.lineHighlightBackground": "#3e3d3290",
         "editor.selectionBackground": "#878b9180",
         "editor.selectionHighlightBackground": "#575b6180",
         "editor.wordHighlightBackground": "#4a4a7680",
@@ -116,9 +116,9 @@ describe('editor', () => {
 
     expect(editor).toMatchInlineSnapshot(`
       {
-        "editor.background": "#1f1f1f",
+        "editor.background": "#141414",
         "editor.foreground": "#ff85c0",
-        "editor.lineHighlightBackground": "#3e3d32",
+        "editor.lineHighlightBackground": "#3e3d3290",
         "editor.selectionBackground": "#878b9180",
         "editor.selectionHighlightBackground": "#575b6180",
         "editor.wordHighlightBackground": "#4a4a7680",
@@ -133,9 +133,9 @@ describe('editor', () => {
 
     expect(editor).toMatchInlineSnapshot(`
       {
-        "editor.background": "#1f1f1f",
+        "editor.background": "#141414",
         "editor.foreground": "#ffc069",
-        "editor.lineHighlightBackground": "#3e3d32",
+        "editor.lineHighlightBackground": "#3e3d3290",
         "editor.selectionBackground": "#878b9180",
         "editor.selectionHighlightBackground": "#575b6180",
         "editor.wordHighlightBackground": "#4a4a7680",
@@ -150,9 +150,9 @@ describe('editor', () => {
 
     expect(editor).toMatchInlineSnapshot(`
       {
-        "editor.background": "#1f1f1f",
+        "editor.background": "#141414",
         "editor.foreground": "#b37feb",
-        "editor.lineHighlightBackground": "#3e3d32",
+        "editor.lineHighlightBackground": "#3e3d3290",
         "editor.selectionBackground": "#878b9180",
         "editor.selectionHighlightBackground": "#575b6180",
         "editor.wordHighlightBackground": "#4a4a7680",
@@ -167,9 +167,9 @@ describe('editor', () => {
 
     expect(editor).toMatchInlineSnapshot(`
       {
-        "editor.background": "#1f1f1f",
+        "editor.background": "#141414",
         "editor.foreground": "#ff7875",
-        "editor.lineHighlightBackground": "#3e3d32",
+        "editor.lineHighlightBackground": "#3e3d3290",
         "editor.selectionBackground": "#878b9180",
         "editor.selectionHighlightBackground": "#575b6180",
         "editor.wordHighlightBackground": "#4a4a7680",
@@ -184,9 +184,9 @@ describe('editor', () => {
 
     expect(editor).toMatchInlineSnapshot(`
       {
-        "editor.background": "#1f1f1f",
+        "editor.background": "#141414",
         "editor.foreground": "#ff9c6e",
-        "editor.lineHighlightBackground": "#3e3d32",
+        "editor.lineHighlightBackground": "#3e3d3290",
         "editor.selectionBackground": "#878b9180",
         "editor.selectionHighlightBackground": "#575b6180",
         "editor.wordHighlightBackground": "#4a4a7680",
@@ -201,9 +201,9 @@ describe('editor', () => {
 
     expect(editor).toMatchInlineSnapshot(`
       {
-        "editor.background": "#1f1f1f",
+        "editor.background": "#141414",
         "editor.foreground": "#fff566",
-        "editor.lineHighlightBackground": "#3e3d32",
+        "editor.lineHighlightBackground": "#3e3d3290",
         "editor.selectionBackground": "#878b9180",
         "editor.selectionHighlightBackground": "#575b6180",
         "editor.wordHighlightBackground": "#4a4a7680",
@@ -1254,8 +1254,8 @@ describe('editorLineNumber', () => {
 
     expect(editorLineNumber).toMatchInlineSnapshot(`
       {
-        "editorLineNumber.activeForeground": "#c2c2bf",
-        "editorLineNumber.foreground": "#90908a",
+        "editorLineNumber.activeForeground": "#1890ff",
+        "editorLineNumber.foreground": "#434343",
       }
     `)
   })
@@ -1266,8 +1266,8 @@ describe('editorLineNumber', () => {
 
     expect(editorLineNumber).toMatchInlineSnapshot(`
       {
-        "editorLineNumber.activeForeground": "#c2c2bf",
-        "editorLineNumber.foreground": "#90908a",
+        "editorLineNumber.activeForeground": "#13c2c2",
+        "editorLineNumber.foreground": "#434343",
       }
     `)
   })
@@ -1278,8 +1278,8 @@ describe('editorLineNumber', () => {
 
     expect(editorLineNumber).toMatchInlineSnapshot(`
       {
-        "editorLineNumber.activeForeground": "#c2c2bf",
-        "editorLineNumber.foreground": "#90908a",
+        "editorLineNumber.activeForeground": "#2f54eb",
+        "editorLineNumber.foreground": "#434343",
       }
     `)
   })
@@ -1290,8 +1290,8 @@ describe('editorLineNumber', () => {
 
     expect(editorLineNumber).toMatchInlineSnapshot(`
       {
-        "editorLineNumber.activeForeground": "#c2c2bf",
-        "editorLineNumber.foreground": "#90908a",
+        "editorLineNumber.activeForeground": "#faad14",
+        "editorLineNumber.foreground": "#434343",
       }
     `)
   })
@@ -1302,8 +1302,8 @@ describe('editorLineNumber', () => {
 
     expect(editorLineNumber).toMatchInlineSnapshot(`
       {
-        "editorLineNumber.activeForeground": "#c2c2bf",
-        "editorLineNumber.foreground": "#90908a",
+        "editorLineNumber.activeForeground": "#52c41a",
+        "editorLineNumber.foreground": "#434343",
       }
     `)
   })
@@ -1314,8 +1314,8 @@ describe('editorLineNumber', () => {
 
     expect(editorLineNumber).toMatchInlineSnapshot(`
       {
-        "editorLineNumber.activeForeground": "#c2c2bf",
-        "editorLineNumber.foreground": "#90908a",
+        "editorLineNumber.activeForeground": "#a0d911",
+        "editorLineNumber.foreground": "#434343",
       }
     `)
   })
@@ -1326,8 +1326,8 @@ describe('editorLineNumber', () => {
 
     expect(editorLineNumber).toMatchInlineSnapshot(`
       {
-        "editorLineNumber.activeForeground": "#c2c2bf",
-        "editorLineNumber.foreground": "#90908a",
+        "editorLineNumber.activeForeground": "#eb2f96",
+        "editorLineNumber.foreground": "#434343",
       }
     `)
   })
@@ -1338,8 +1338,8 @@ describe('editorLineNumber', () => {
 
     expect(editorLineNumber).toMatchInlineSnapshot(`
       {
-        "editorLineNumber.activeForeground": "#c2c2bf",
-        "editorLineNumber.foreground": "#90908a",
+        "editorLineNumber.activeForeground": "#fa8c16",
+        "editorLineNumber.foreground": "#434343",
       }
     `)
   })
@@ -1350,8 +1350,8 @@ describe('editorLineNumber', () => {
 
     expect(editorLineNumber).toMatchInlineSnapshot(`
       {
-        "editorLineNumber.activeForeground": "#c2c2bf",
-        "editorLineNumber.foreground": "#90908a",
+        "editorLineNumber.activeForeground": "#722ed1",
+        "editorLineNumber.foreground": "#434343",
       }
     `)
   })
@@ -1362,8 +1362,8 @@ describe('editorLineNumber', () => {
 
     expect(editorLineNumber).toMatchInlineSnapshot(`
       {
-        "editorLineNumber.activeForeground": "#c2c2bf",
-        "editorLineNumber.foreground": "#90908a",
+        "editorLineNumber.activeForeground": "#f5222d",
+        "editorLineNumber.foreground": "#434343",
       }
     `)
   })
@@ -1374,8 +1374,8 @@ describe('editorLineNumber', () => {
 
     expect(editorLineNumber).toMatchInlineSnapshot(`
       {
-        "editorLineNumber.activeForeground": "#c2c2bf",
-        "editorLineNumber.foreground": "#90908a",
+        "editorLineNumber.activeForeground": "#fa541c",
+        "editorLineNumber.foreground": "#434343",
       }
     `)
   })
@@ -1386,8 +1386,8 @@ describe('editorLineNumber', () => {
 
     expect(editorLineNumber).toMatchInlineSnapshot(`
       {
-        "editorLineNumber.activeForeground": "#c2c2bf",
-        "editorLineNumber.foreground": "#90908a",
+        "editorLineNumber.activeForeground": "#fadb14",
+        "editorLineNumber.foreground": "#434343",
       }
     `)
   })

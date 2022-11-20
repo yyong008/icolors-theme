@@ -1,6 +1,6 @@
 import type { RawAtomTheme } from '../common'
 
-import colors from '../../designs/index'
+import colors, { mapColorsWithRuntimeWeight } from '../../designs/index'
 import { gnAtomThemeFns } from '../common'
 import { markdownTypes } from '../constants'
 
@@ -14,7 +14,14 @@ const punctuationScopes: RawAtomTheme[] = [
       'punctuation.definition.metadata',
       'punctuation.definition.metadata'
     ],
-    foreground: colors.yellowColors600,
+    foreground: colors.grayColors800,
+    fontStyle: 'bold'
+  },
+  {
+    name: 'markdown::header::punctuation',
+    scope: [],
+    rawScope: ['punctuation.definition.heading'],
+    foreground: mapColorsWithRuntimeWeight('400'),
     fontStyle: 'bold'
   }
 ]

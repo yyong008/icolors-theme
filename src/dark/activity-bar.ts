@@ -8,7 +8,10 @@ import colors, { mapColorsWithRuntimeWeight } from '../designs/index'
 
 const activityBar = (): Partial<ActivityBar> => ({
   ['activityBar.background']: colors.grayColors1100,
-  ['activityBar.foreground']: mapColorsWithRuntimeWeight('400')
+  ['activityBar.foreground']: mapColorsWithRuntimeWeight('300'),
+  ['activityBar.dropBorder']: '',
+  ['activityBar.inactiveForeground']: mapColorsWithRuntimeWeight('700'),
+  ['activityBar.border']: colors.grayColors900
 })
 
 const activityBarBadge = (): Partial<ActivityBarBadge> => ({

@@ -4,15 +4,22 @@ import { setRuntimeColors } from '../../designs/index'
 import ab from '../../dark/activity-bar'
 
 describe('activity-bar', () => {
+  it('activity-bar::length', () => {
+    const activityBar = ab.activityBar()
+
+    expect(Object.keys(activityBar)).toHaveLength(5)
+  })
   it('activity-bar::blueColors', () => {
     setRuntimeColors('blueColors')
     const activityBar = ab.activityBar()
 
-    expect(Object.keys(activityBar)).toHaveLength(2)
     expect(activityBar).toMatchInlineSnapshot(`
       {
         "activityBar.background": "#1f1f1f",
-        "activityBar.foreground": "#69c0ff",
+        "activityBar.border": "#434343",
+        "activityBar.dropBorder": "",
+        "activityBar.foreground": "#91d5ff",
+        "activityBar.inactiveForeground": "#0050b3",
       }
     `)
   })
@@ -21,11 +28,13 @@ describe('activity-bar', () => {
     setRuntimeColors('cyanColors')
     const activityBar = ab.activityBar()
 
-    expect(Object.keys(activityBar)).toHaveLength(2)
     expect(activityBar).toMatchInlineSnapshot(`
       {
         "activityBar.background": "#1f1f1f",
-        "activityBar.foreground": "#5cdbd3",
+        "activityBar.border": "#434343",
+        "activityBar.dropBorder": "",
+        "activityBar.foreground": "#87e8de",
+        "activityBar.inactiveForeground": "#006d75",
       }
     `)
   })
@@ -34,11 +43,13 @@ describe('activity-bar', () => {
     setRuntimeColors('geekBlueColors')
     const activityBar = ab.activityBar()
 
-    expect(Object.keys(activityBar)).toHaveLength(2)
     expect(activityBar).toMatchInlineSnapshot(`
       {
         "activityBar.background": "#1f1f1f",
-        "activityBar.foreground": "#85a5ff",
+        "activityBar.border": "#434343",
+        "activityBar.dropBorder": "",
+        "activityBar.foreground": "#adc6ff",
+        "activityBar.inactiveForeground": "#10239e",
       }
     `)
   })
@@ -47,11 +58,13 @@ describe('activity-bar', () => {
     setRuntimeColors('goldColors')
     const activityBar = ab.activityBar()
 
-    expect(Object.keys(activityBar)).toHaveLength(2)
     expect(activityBar).toMatchInlineSnapshot(`
       {
         "activityBar.background": "#1f1f1f",
-        "activityBar.foreground": "#ffd666",
+        "activityBar.border": "#434343",
+        "activityBar.dropBorder": "",
+        "activityBar.foreground": "#ffe58f",
+        "activityBar.inactiveForeground": "#ad6800",
       }
     `)
   })
@@ -60,11 +73,13 @@ describe('activity-bar', () => {
     setRuntimeColors('greenColors')
     const activityBar = ab.activityBar()
 
-    expect(Object.keys(activityBar)).toHaveLength(2)
     expect(activityBar).toMatchInlineSnapshot(`
       {
         "activityBar.background": "#1f1f1f",
-        "activityBar.foreground": "#95de64",
+        "activityBar.border": "#434343",
+        "activityBar.dropBorder": "",
+        "activityBar.foreground": "#b7eb8f",
+        "activityBar.inactiveForeground": "#237804",
       }
     `)
   })
@@ -73,11 +88,13 @@ describe('activity-bar', () => {
     setRuntimeColors('limeColors')
     const activityBar = ab.activityBar()
 
-    expect(Object.keys(activityBar)).toHaveLength(2)
     expect(activityBar).toMatchInlineSnapshot(`
       {
         "activityBar.background": "#1f1f1f",
-        "activityBar.foreground": "#d3f261",
+        "activityBar.border": "#434343",
+        "activityBar.dropBorder": "",
+        "activityBar.foreground": "#eaff8f",
+        "activityBar.inactiveForeground": "#5b8c00",
       }
     `)
   })
@@ -86,11 +103,13 @@ describe('activity-bar', () => {
     setRuntimeColors('magentaColors')
     const activityBar = ab.activityBar()
 
-    expect(Object.keys(activityBar)).toHaveLength(2)
     expect(activityBar).toMatchInlineSnapshot(`
       {
         "activityBar.background": "#1f1f1f",
-        "activityBar.foreground": "#ff85c0",
+        "activityBar.border": "#434343",
+        "activityBar.dropBorder": "",
+        "activityBar.foreground": "#ffadd2",
+        "activityBar.inactiveForeground": "#9e1068",
       }
     `)
   })
@@ -99,11 +118,13 @@ describe('activity-bar', () => {
     setRuntimeColors('orangeColors')
     const activityBar = ab.activityBar()
 
-    expect(Object.keys(activityBar)).toHaveLength(2)
     expect(activityBar).toMatchInlineSnapshot(`
       {
         "activityBar.background": "#1f1f1f",
-        "activityBar.foreground": "#ffc069",
+        "activityBar.border": "#434343",
+        "activityBar.dropBorder": "",
+        "activityBar.foreground": "#ffd591",
+        "activityBar.inactiveForeground": "#ad4e00",
       }
     `)
   })
@@ -112,11 +133,13 @@ describe('activity-bar', () => {
     setRuntimeColors('purpleColors')
     const activityBar = ab.activityBar()
 
-    expect(Object.keys(activityBar)).toHaveLength(2)
     expect(activityBar).toMatchInlineSnapshot(`
       {
         "activityBar.background": "#1f1f1f",
-        "activityBar.foreground": "#b37feb",
+        "activityBar.border": "#434343",
+        "activityBar.dropBorder": "",
+        "activityBar.foreground": "#d3adf7",
+        "activityBar.inactiveForeground": "#391085",
       }
     `)
   })
@@ -125,11 +148,13 @@ describe('activity-bar', () => {
     setRuntimeColors('redColors')
     const activityBar = ab.activityBar()
 
-    expect(Object.keys(activityBar)).toHaveLength(2)
     expect(activityBar).toMatchInlineSnapshot(`
       {
         "activityBar.background": "#1f1f1f",
-        "activityBar.foreground": "#ff7875",
+        "activityBar.border": "#434343",
+        "activityBar.dropBorder": "",
+        "activityBar.foreground": "#ffa39e",
+        "activityBar.inactiveForeground": "#a8071a",
       }
     `)
   })
@@ -138,11 +163,13 @@ describe('activity-bar', () => {
     setRuntimeColors('volcanoColors')
     const activityBar = ab.activityBar()
 
-    expect(Object.keys(activityBar)).toHaveLength(2)
     expect(activityBar).toMatchInlineSnapshot(`
       {
         "activityBar.background": "#1f1f1f",
-        "activityBar.foreground": "#ff9c6e",
+        "activityBar.border": "#434343",
+        "activityBar.dropBorder": "",
+        "activityBar.foreground": "#ffbb96",
+        "activityBar.inactiveForeground": "#ad2102",
       }
     `)
   })
@@ -151,22 +178,29 @@ describe('activity-bar', () => {
     setRuntimeColors('yellowColors')
     const activityBar = ab.activityBar()
 
-    expect(Object.keys(activityBar)).toHaveLength(2)
     expect(activityBar).toMatchInlineSnapshot(`
       {
         "activityBar.background": "#1f1f1f",
-        "activityBar.foreground": "#fff566",
+        "activityBar.border": "#434343",
+        "activityBar.dropBorder": "",
+        "activityBar.foreground": "#fffb8f",
+        "activityBar.inactiveForeground": "#ad8b00",
       }
     `)
   })
 })
 
 describe('activity-bar-badge', () => {
+  it('activity-bar-badge::length', () => {
+    const activityBarBadge = ab.activityBarBadge()
+
+    expect(Object.keys(activityBarBadge)).toHaveLength(2)
+  })
+
   it('activity-bar-badge::blueColors', () => {
     setRuntimeColors('blueColors')
     const activityBarBadge = ab.activityBarBadge()
 
-    expect(Object.keys(activityBarBadge)).toHaveLength(2)
     expect(activityBarBadge).toMatchInlineSnapshot(`
       {
         "activityBarBadge.background": "#1890ff",
@@ -179,7 +213,6 @@ describe('activity-bar-badge', () => {
     setRuntimeColors('cyanColors')
     const activityBarBadge = ab.activityBarBadge()
 
-    expect(Object.keys(activityBarBadge)).toHaveLength(2)
     expect(activityBarBadge).toMatchInlineSnapshot(`
       {
         "activityBarBadge.background": "#13c2c2",
@@ -192,7 +225,6 @@ describe('activity-bar-badge', () => {
     setRuntimeColors('geekBlueColors')
     const activityBarBadge = ab.activityBarBadge()
 
-    expect(Object.keys(activityBarBadge)).toHaveLength(2)
     expect(activityBarBadge).toMatchInlineSnapshot(`
       {
         "activityBarBadge.background": "#2f54eb",
@@ -205,7 +237,6 @@ describe('activity-bar-badge', () => {
     setRuntimeColors('goldColors')
     const activityBarBadge = ab.activityBarBadge()
 
-    expect(Object.keys(activityBarBadge)).toHaveLength(2)
     expect(activityBarBadge).toMatchInlineSnapshot(`
       {
         "activityBarBadge.background": "#faad14",
@@ -218,7 +249,6 @@ describe('activity-bar-badge', () => {
     setRuntimeColors('greenColors')
     const activityBarBadge = ab.activityBarBadge()
 
-    expect(Object.keys(activityBarBadge)).toHaveLength(2)
     expect(activityBarBadge).toMatchInlineSnapshot(`
       {
         "activityBarBadge.background": "#52c41a",
@@ -231,7 +261,6 @@ describe('activity-bar-badge', () => {
     setRuntimeColors('limeColors')
     const activityBarBadge = ab.activityBarBadge()
 
-    expect(Object.keys(activityBarBadge)).toHaveLength(2)
     expect(activityBarBadge).toMatchInlineSnapshot(`
       {
         "activityBarBadge.background": "#a0d911",
@@ -244,7 +273,6 @@ describe('activity-bar-badge', () => {
     setRuntimeColors('magentaColors')
     const activityBarBadge = ab.activityBarBadge()
 
-    expect(Object.keys(activityBarBadge)).toHaveLength(2)
     expect(activityBarBadge).toMatchInlineSnapshot(`
       {
         "activityBarBadge.background": "#eb2f96",
@@ -257,7 +285,6 @@ describe('activity-bar-badge', () => {
     setRuntimeColors('orangeColors')
     const activityBarBadge = ab.activityBarBadge()
 
-    expect(Object.keys(activityBarBadge)).toHaveLength(2)
     expect(activityBarBadge).toMatchInlineSnapshot(`
       {
         "activityBarBadge.background": "#fa8c16",
@@ -270,7 +297,6 @@ describe('activity-bar-badge', () => {
     setRuntimeColors('purpleColors')
     const activityBarBadge = ab.activityBarBadge()
 
-    expect(Object.keys(activityBarBadge)).toHaveLength(2)
     expect(activityBarBadge).toMatchInlineSnapshot(`
       {
         "activityBarBadge.background": "#722ed1",
@@ -283,7 +309,6 @@ describe('activity-bar-badge', () => {
     setRuntimeColors('redColors')
     const activityBarBadge = ab.activityBarBadge()
 
-    expect(Object.keys(activityBarBadge)).toHaveLength(2)
     expect(activityBarBadge).toMatchInlineSnapshot(`
       {
         "activityBarBadge.background": "#f5222d",
@@ -296,7 +321,6 @@ describe('activity-bar-badge', () => {
     setRuntimeColors('volcanoColors')
     const activityBarBadge = ab.activityBarBadge()
 
-    expect(Object.keys(activityBarBadge)).toHaveLength(2)
     expect(activityBarBadge).toMatchInlineSnapshot(`
       {
         "activityBarBadge.background": "#fa541c",
@@ -309,7 +333,6 @@ describe('activity-bar-badge', () => {
     setRuntimeColors('yellowColors')
     const activityBarBadge = ab.activityBarBadge()
 
-    expect(Object.keys(activityBarBadge)).toHaveLength(2)
     expect(activityBarBadge).toMatchInlineSnapshot(`
       {
         "activityBarBadge.background": "#fadb14",
@@ -320,11 +343,15 @@ describe('activity-bar-badge', () => {
 })
 
 describe('activity-bar-item', () => {
+  it('activity-bar-item::length', () => {
+    const activityBarItem = ab.activityBarItem()
+
+    expect(Object.keys(activityBarItem)).toHaveLength(3)
+  })
   it('activity-bar-item::blueColors', () => {
     setRuntimeColors('blueColors')
     const activityBarItem = ab.activityBarItem()
 
-    expect(Object.keys(activityBarItem)).toHaveLength(3)
     expect(activityBarItem).toMatchInlineSnapshot(`
       {
         "activityBarItem.settingsProfilesBackground": "",
@@ -338,7 +365,6 @@ describe('activity-bar-item', () => {
     setRuntimeColors('cyanColors')
     const activityBarItem = ab.activityBarItem()
 
-    expect(Object.keys(activityBarItem)).toHaveLength(3)
     expect(activityBarItem).toMatchInlineSnapshot(`
       {
         "activityBarItem.settingsProfilesBackground": "",
@@ -352,7 +378,6 @@ describe('activity-bar-item', () => {
     setRuntimeColors('geekBlueColors')
     const activityBarItem = ab.activityBarItem()
 
-    expect(Object.keys(activityBarItem)).toHaveLength(3)
     expect(activityBarItem).toMatchInlineSnapshot(`
       {
         "activityBarItem.settingsProfilesBackground": "",
@@ -366,7 +391,6 @@ describe('activity-bar-item', () => {
     setRuntimeColors('goldColors')
     const activityBarItem = ab.activityBarItem()
 
-    expect(Object.keys(activityBarItem)).toHaveLength(3)
     expect(activityBarItem).toMatchInlineSnapshot(`
       {
         "activityBarItem.settingsProfilesBackground": "",
@@ -380,7 +404,6 @@ describe('activity-bar-item', () => {
     setRuntimeColors('greenColors')
     const activityBarItem = ab.activityBarItem()
 
-    expect(Object.keys(activityBarItem)).toHaveLength(3)
     expect(activityBarItem).toMatchInlineSnapshot(`
       {
         "activityBarItem.settingsProfilesBackground": "",
@@ -394,7 +417,6 @@ describe('activity-bar-item', () => {
     setRuntimeColors('limeColors')
     const activityBarItem = ab.activityBarItem()
 
-    expect(Object.keys(activityBarItem)).toHaveLength(3)
     expect(activityBarItem).toMatchInlineSnapshot(`
       {
         "activityBarItem.settingsProfilesBackground": "",
@@ -408,7 +430,6 @@ describe('activity-bar-item', () => {
     setRuntimeColors('magentaColors')
     const activityBarItem = ab.activityBarItem()
 
-    expect(Object.keys(activityBarItem)).toHaveLength(3)
     expect(activityBarItem).toMatchInlineSnapshot(`
       {
         "activityBarItem.settingsProfilesBackground": "",
@@ -422,7 +443,6 @@ describe('activity-bar-item', () => {
     setRuntimeColors('orangeColors')
     const activityBarItem = ab.activityBarItem()
 
-    expect(Object.keys(activityBarItem)).toHaveLength(3)
     expect(activityBarItem).toMatchInlineSnapshot(`
       {
         "activityBarItem.settingsProfilesBackground": "",
@@ -436,7 +456,6 @@ describe('activity-bar-item', () => {
     setRuntimeColors('purpleColors')
     const activityBarItem = ab.activityBarItem()
 
-    expect(Object.keys(activityBarItem)).toHaveLength(3)
     expect(activityBarItem).toMatchInlineSnapshot(`
       {
         "activityBarItem.settingsProfilesBackground": "",
@@ -450,7 +469,6 @@ describe('activity-bar-item', () => {
     setRuntimeColors('redColors')
     const activityBarItem = ab.activityBarItem()
 
-    expect(Object.keys(activityBarItem)).toHaveLength(3)
     expect(activityBarItem).toMatchInlineSnapshot(`
       {
         "activityBarItem.settingsProfilesBackground": "",
@@ -464,7 +482,6 @@ describe('activity-bar-item', () => {
     setRuntimeColors('volcanoColors')
     const activityBarItem = ab.activityBarItem()
 
-    expect(Object.keys(activityBarItem)).toHaveLength(3)
     expect(activityBarItem).toMatchInlineSnapshot(`
       {
         "activityBarItem.settingsProfilesBackground": "",
@@ -478,7 +495,6 @@ describe('activity-bar-item', () => {
     setRuntimeColors('yellowColors')
     const activityBarItem = ab.activityBarItem()
 
-    expect(Object.keys(activityBarItem)).toHaveLength(3)
     expect(activityBarItem).toMatchInlineSnapshot(`
       {
         "activityBarItem.settingsProfilesBackground": "",

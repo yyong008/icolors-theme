@@ -13,44 +13,44 @@ const headingScopes: RawAtomTheme[] = [
     fontStyle: 'bold'
   },
   {
-    name: 'markdown::heading1',
+    name: 'markdown::heading.1',
     scope: [],
-    rawScope: ['markup.heading1'],
+    rawScope: ['heading.1'],
     foreground: mapColorsWithRuntimeWeightFn('800'),
     fontStyle: 'bold'
   },
   {
-    name: 'markdown::heading2',
+    name: 'markdown::heading.2',
     scope: [],
-    rawScope: ['markup.heading2'],
+    rawScope: ['heading.2'],
     foreground: mapColorsWithRuntimeWeightFn('700'),
     fontStyle: 'bold'
   },
   {
-    name: 'markdown::heading3',
+    name: 'markdown::heading.3',
     scope: [],
-    rawScope: ['markup.heading3'],
+    rawScope: ['heading.3'],
     foreground: mapColorsWithRuntimeWeightFn('600'),
     fontStyle: 'bold'
   },
   {
     name: 'markdown::heading4',
     scope: [],
-    rawScope: ['markup.heading4'],
+    rawScope: ['heading.4'],
     foreground: mapColorsWithRuntimeWeightFn('500'),
     fontStyle: 'bold'
   },
   {
     name: 'markdown::heading5',
     scope: [],
-    rawScope: ['markup.heading5'],
+    rawScope: ['heading.5'],
     foreground: mapColorsWithRuntimeWeightFn('400'),
     fontStyle: 'bold'
   },
   {
     name: 'markdown::heading6',
     scope: [],
-    rawScope: ['markup.heading6'],
+    rawScope: ['heading.6'],
     foreground: mapColorsWithRuntimeWeightFn('300'),
     fontStyle: 'bold'
   }

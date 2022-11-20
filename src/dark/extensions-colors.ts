@@ -9,7 +9,8 @@ import { mapColorsWithRuntimeWeight } from '../designs/index'
 const extensionButton = (): Partial<ExtensionButton> => ({
   ['extensionButton.prominentForeground']: mapColorsWithRuntimeWeight('900'),
   ['extensionButton.prominentBackground']: mapColorsWithRuntimeWeight('400'),
-  ['extensionButton.prominentHoverBackground']: ''
+  ['extensionButton.prominentHoverBackground']:
+    mapColorsWithRuntimeWeight('300')
 })
 
 const extensionBadge = (): Partial<ExtensionBadge> => ({

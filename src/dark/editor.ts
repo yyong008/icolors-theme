@@ -13,10 +13,7 @@ import type {
   EditorCommentsWidget
 } from '../types/Editor'
 
-import colors, {
-  mapColorsReverseWithRuntimeWeight,
-  mapColorsWithRuntimeWeight
-} from '../designs/index'
+import colors, { mapColorsWithRuntimeWeight } from '../designs/index'
 
 const editor = (): Partial<Editor> => ({
   ['editor.background']: colors.grayColors1200,
