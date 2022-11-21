@@ -4,14 +4,14 @@ import type {
   ActivityBarItem
 } from '../types/ActivityBar.js'
 
-import colors, { mapColorsWithRuntimeWeight } from '../designs/index.js'
+import colors, { mapColorsWithRuntimeWeight } from '../designs/index'
 
 const activityBar = (): Partial<ActivityBar> => ({
   ['activityBar.background']: colors.grayColors300,
   ['activityBar.foreground']: mapColorsWithRuntimeWeight('300'),
   ['activityBar.dropBorder']: '',
   ['activityBar.inactiveForeground']: mapColorsWithRuntimeWeight('800'),
-  ['activityBar.border']: colors.grayColors900
+  ['activityBar.border']: colors.grayColors500
 })
 
 const activityBarBadge = (): Partial<ActivityBarBadge> => ({

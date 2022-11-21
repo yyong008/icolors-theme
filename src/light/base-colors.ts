@@ -4,9 +4,9 @@ import colors, { mapColorsWithRuntimeWeight } from '../designs/index.js'
 
 const baseColors = (): Partial<BaseColors> => ({
   focusBorder: mapColorsWithRuntimeWeight('400'),
-  foreground: colors.grayColors300,
+  foreground: colors.grayColors1100,
   disabledForeground: colors.grayColors800,
-  descriptionForeground: mapColorsWithRuntimeWeight('400'),
+  descriptionForeground: colors.grayColors1100,
   errorForeground: colors.redColors600
 })
 

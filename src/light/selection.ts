@@ -1,8 +1,8 @@
-import { colors } from 'src/designs/systemColor.js'
-import type Selection from '../types/Selection.js'
+import { mapColorsReverseWithRuntimeWeightAlpha } from 'src/designs/index'
+import type Selection from '../types/Selection'
 
 const selection = (): Partial<Selection> => ({
-  ['selection.background']: colors.grayColors900
+  ['selection.background']: ''
 })
 
 export default { selection }

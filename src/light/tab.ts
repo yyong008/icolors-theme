@@ -1,32 +1,32 @@
 import type Tab from '../types/Tab.js'
 
-import colors, { mapColorsWithRuntimeWeight } from '../designs/index.js'
+import colors, { mapColorsWithRuntimeWeight } from '../designs/index'
 
 const tab = (): Partial<Tab> => ({
-  ['tab.activeBackground']: colors.grayColors300,
+  ['tab.activeBackground']: mapColorsWithRuntimeWeight('100'),
   ['tab.unfocusedActiveBackground']: '',
   ['tab.inactiveBackground']: colors.grayColors300,
-  ['tab.border']: colors.grayColors900,
-  ['tab.inactiveForeground']: colors.grayColors600,
-  ['tab.activeForeground']: colors.grayColors100,
-  ['tab.lastPinnedBorder']: colors.grayColors900,
-  ['tab.activeBorder']: '',
-  ['tab.unfocusedActiveBorder']: colors.grayColors900,
-  ['tab.activeBorderTop']: mapColorsWithRuntimeWeight('400'),
-  ['tab.unfocusedActiveBorderTop']: colors.grayColors900,
+  ['tab.border']: '', // border associate
+  ['tab.inactiveForeground']: colors.grayColors1100,
+  ['tab.activeForeground']: colors.grayColors1100,
+  ['tab.lastPinnedBorder']: colors.redColors1000, // border associate
+  ['tab.activeBorder']: mapColorsWithRuntimeWeight('400'), // border associate
+  ['tab.unfocusedActiveBorder']: '', // colors.grayColors900,
+  ['tab.activeBorderTop']: '', // border associate
+  ['tab.unfocusedActiveBorderTop']: '', //colors.grayColors900, // border associate
   ['tab.unfocusedInactiveBackground']: '',
   ['tab.unfocusedActiveForeground']: '',
   ['tab.unfocusedInactiveForeground']: '',
-  ['tab.hoverBackground']: colors.grayColors300,
+  ['tab.hoverBackground']: '',
   ['tab.unfocusedHoverBackground']: '',
   ['tab.hoverForeground']: '',
   ['tab.unfocusedHoverForeground']: '',
-  ['tab.hoverBorder']: '',
-  ['tab.unfocusedHoverBorder']: colors.grayColors900,
-  ['tab.activeModifiedBorder']: colors.grayColors900,
-  ['tab.inactiveModifiedBorder']: colors.grayColors900,
-  ['tab.unfocusedActiveModifiedBorder']: colors.grayColors900,
-  ['tab.unfocusedInactiveModifiedBorder']: colors.grayColors900
+  ['tab.hoverBorder']: '', // border associate
+  ['tab.unfocusedHoverBorder']: '', // border associate
+  ['tab.activeModifiedBorder']: '', // border associate
+  ['tab.inactiveModifiedBorder']: '', // border associate
+  ['tab.unfocusedActiveModifiedBorder']: '', // border associate
+  ['tab.unfocusedInactiveModifiedBorder']: '' // border associate
 })
 
 export default { tab }

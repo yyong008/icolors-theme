@@ -12,7 +12,7 @@ const peekView = (): Partial<PeekView> => ({
 })
 
 const peekViewEditor = (): Partial<PeekViewEditor> => ({
-  ['peekViewEditor.background']: '#272822',
+  ['peekViewEditor.background']: colors.grayColors300,
   ['peekViewEditor.matchHighlightBackground']: '#75715E'
 })
 

@@ -21,7 +21,7 @@ const notificationCenterHeader = (): Partial<NotificationCenterHeader> => ({
 })
 
 const notificationToast = (): Partial<NotificationToast> => ({
-  ['notificationToast.border']: ''
+  ['notificationToast.border']: mapColorsWithRuntimeWeight('300')
 })
 
 const notifications = (): Partial<Notifications> => ({

@@ -1,9 +1,9 @@
 import type ContrastColors from '../types/ContrastColors'
 
-import { mapColorsWithRuntimeWeight } from '../designs/index'
+// import { mapColorsWithRuntimeWeight } from '../designs/index'
 
 const ContrastColors = (): Partial<ContrastColors> => ({
-  contrastActiveBorder: mapColorsWithRuntimeWeight('1000'),
+  contrastActiveBorder: '',
   contrastBorder: ''
 })
 

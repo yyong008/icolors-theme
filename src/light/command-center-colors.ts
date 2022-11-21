@@ -5,7 +5,7 @@ import colors, { mapColorsWithRuntimeWeight } from '../designs/index.js'
 const commandCenterColors = (): Partial<CommandCenter> => ({
   ['commandCenter.foreground']: mapColorsWithRuntimeWeight('100'),
   ['commandCenter.activeForeground']: mapColorsWithRuntimeWeight('500'),
-  ['commandCenter.background']: colors.grayColors1000,
+  ['commandCenter.background']: colors.grayColors300,
   ['commandCenter.activeBackground']: '',
   ['commandCenter.border']: mapColorsWithRuntimeWeight('400')
 })

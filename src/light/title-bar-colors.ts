@@ -7,7 +7,7 @@ const titleBar = (): Partial<TitleBar> => ({
   ['titleBar.activeForeground']: mapColorsWithRuntimeWeight('500'),
   ['titleBar.inactiveBackground']: colors.grayColors300,
   ['titleBar.inactiveForeground']: mapColorsWithRuntimeWeight('500'),
-  ['titleBar.border']: colors.grayColors900
+  ['titleBar.border']: colors.grayColors500
 })
 
 export default { titleBar }

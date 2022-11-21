@@ -1,11 +1,31 @@
-import type { List } from '../types/List.js'
+import type { List } from '../types/List'
+
+import colors, { mapColorsWithRuntimeWeight } from '../designs/index'
 
 const list = (): Partial<List> => ({
-  ['list.activeSelectionBackground']: '#75715E',
-  ['list.inactiveSelectionBackground']: '#414339',
-  ['list.hoverBackground']: '#3e3d32',
-  ['list.dropBackground']: '#414339',
-  ['list.highlightForeground']: '#f8f8f2'
+  ['list.activeSelectionBackground']: mapColorsWithRuntimeWeight('100'),
+  ['list.inactiveSelectionBackground']: '',
+  ['list.hoverBackground']: mapColorsWithRuntimeWeight('100'),
+  ['list.dropBackground']: '',
+  ['list.highlightForeground']: '',
+  'list.activeSelectionForeground': colors.grayColors1100,
+  'list.activeSelectionIconForeground': '',
+  'list.focusBackground': '',
+  'list.focusForeground': '',
+  'list.focusHighlightForeground': '',
+  'list.focusOutline': '',
+  'list.focusAndSelectionOutline': '',
+  'list.hoverForeground': '',
+  'list.inactiveSelectionForeground': '',
+  'list.inactiveSelectionIconForeground': '',
+  'list.inactiveFocusBackground': '',
+  'list.inactiveFocusOutline': '',
+  'list.invalidItemForeground': '',
+  'list.errorForeground': '',
+  'list.warningForeground': '',
+  'list.filterMatchBackground': '',
+  'list.filterMatchBorder': '',
+  'list.deemphasizedForeground': ''
 })
 
 export default { list }

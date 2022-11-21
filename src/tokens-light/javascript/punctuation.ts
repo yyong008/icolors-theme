@@ -9,7 +9,7 @@ const punctuationScopes: RawAtomTheme[] = [
     name: '(c|m)(j|t)s(x)::comment',
     scope: [],
     rawScope: ['punctuation.definition.comment'],
-    foreground: colors.grayColors1000,
+    foreground: colors.grayColors600,
     fontStyle: ''
   },
   {
@@ -19,7 +19,7 @@ const punctuationScopes: RawAtomTheme[] = [
       'punctuation.definition.string.template.begin',
       'punctuation.definition.string.template.end'
     ],
-    foreground: colors.grayColors1000,
+    foreground: colors.grayColors800,
     fontStyle: ''
   },
   {

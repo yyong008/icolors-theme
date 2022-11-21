@@ -18,7 +18,7 @@ import colors, { mapColorsWithRuntimeWeight } from '../designs/index.js'
 const editor = (): Partial<Editor> => ({
   ['editor.background']: colors.grayColors300,
   ['editor.foreground']: mapColorsWithRuntimeWeight('400'),
-  ['editor.selectionHighlightBackground']: '#575b6180',
+  ['editor.selectionHighlightBackground']: mapColorsWithRuntimeWeight('200'),
   ['editor.selectionBackground']: '#878b9180',
   ['editor.wordHighlightBackground']: '#4a4a7680',
   ['editor.wordHighlightStrongBackground']: '#6a6a9680',
@@ -44,16 +44,19 @@ const editorGroupColors = (): Partial<EditorGroup> => ({
 })
 
 const editorGroupHeaderColors = (): Partial<EditorGroupHeader> => ({
-  ['editorGroupHeader.tabsBackground']: '#1e1f1c'
+  ['editorGroupHeader.tabsBackground']: colors.grayColors300,
+  ['editorGroupHeader.noTabsBackground']: '',
+  ['editorGroupHeader.tabsBorder']: colors.grayColors500,
+  ['editorGroupHeader.border']: ''
 })
 
 const editorWidget = (): Partial<EditorWidget> => ({
-  ['editorWidget.background']: colors.grayColors1100
+  ['editorWidget.background']: mapColorsWithRuntimeWeight('200')
 })
 
 const editorHoverWidget = (): Partial<EditorHoverWidget> => ({
-  ['editorHoverWidget.background']: colors.grayColors1000,
-  ['editorHoverWidget.border']: '#75715E'
+  ['editorHoverWidget.background']: colors.grayColors300,
+  ['editorHoverWidget.border']: mapColorsWithRuntimeWeight('400')
 })
 
 const editorSuggestWidget = (): Partial<EditorSuggestWidget> => ({

@@ -9,6 +9,11 @@ export interface QuickInputList {
   'quickInputList.focusIconForeground': string
 }
 
-export interface quickInputTitle {
+export interface QuickInputTitle {
   'quickInputTitle.background': string
+}
+
+export interface PickerGroup {
+  'pickerGroup.border': string
+  'pickerGroup.foreground': string
 }

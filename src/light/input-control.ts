@@ -3,8 +3,8 @@ import type { Input, InputOption, InputValidation } from '../types/Input.js'
 import colors, { mapColorsWithRuntimeWeight } from '../designs/index.js'
 
 const input = (): Partial<Input> => ({
-  ['input.foreground']: colors.grayColors100,
-  ['input.background']: mapColorsWithRuntimeWeight('1000'),
+  ['input.foreground']: colors.grayColors1100,
+  ['input.background']: colors.grayColors300,
   ['input.border']: mapColorsWithRuntimeWeight('300')
 })
 

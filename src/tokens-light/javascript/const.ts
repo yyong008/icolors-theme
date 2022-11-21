@@ -9,7 +9,7 @@ const constScopes: RawAtomTheme[] = [
     name: '(c|m)(j|t)s(x)::const',
     scope: [],
     rawScope: ['storage.type'],
-    foreground: colors.grayColors100,
+    foreground: colors.grayColors1000,
     fontStyle: ''
   }
 ]

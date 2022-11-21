@@ -9,8 +9,8 @@ import type {
 import colors, { mapColorsWithRuntimeWeight } from '../designs/index.js'
 
 const panel = (): Partial<Panel> => ({
-  ['panel.background']: colors.grayColors1200,
-  ['panel.border']: colors.grayColors900,
+  ['panel.background']: colors.grayColors300,
+  ['panel.border']: colors.grayColors500,
   ['panel.dropBorder']: ''
 })
 
@@ -21,7 +21,7 @@ const panelTitle = (): Partial<PanelTitle> => ({
 })
 
 const panelInput = (): Partial<PanelInput> => ({
-  ['panelInput.border']: colors.redColors900
+  ['panelInput.border']: mapColorsWithRuntimeWeight('400')
 })
 
 const panelSection = (): Partial<PanelSection> => ({
