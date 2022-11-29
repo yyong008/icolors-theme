@@ -1,23 +1,23 @@
-import type { RawAtomTheme } from '../common.js'
+import type { RawAtomTheme } from '../common'
 
-import colors, { mapColorsWithRuntimeWeight } from '../../designs/index.js'
-import { gnAtomThemeFns } from '../common.js'
-import { jsTypes } from '../constants.js'
+import colors, { mapColorsWithRuntimeWeightFn } from '../../designs/index'
+import { gnAtomThemeFns } from '../common'
+import { jsTypes } from '../constants'
 
 const stringScopes: RawAtomTheme[] = [
   {
     name: '(c|m)(j|t)s(x)::string',
     scope: [],
     rawScope: ['string.quoted.single', 'string.quoted.double'],
-    foreground: colors.grayColors800,
-    fontStyle: 'italic'
+    foreground: colors.grayColors1300,
+    fontStyle: ''
   },
   {
     name: '(c|m)(j|t)s(x)::string',
     scope: [],
     rawScope: ['string.template'],
-    foreground: mapColorsWithRuntimeWeight('600'),
-    fontStyle: 'italic'
+    foreground: mapColorsWithRuntimeWeightFn('600'),
+    fontStyle: ''
   }
 ]
 

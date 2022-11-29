@@ -1,15 +1,15 @@
-import type { RawAtomTheme } from '../common.js'
+import type { RawAtomTheme } from '../common'
 
-import { mapColorsWithRuntimeWeightFn } from '../../designs/index.js'
-import { gnAtomThemeFns } from '../common.js'
-import { jsTypes } from '../constants.js'
+import colors from '../../designs/index'
+import { gnAtomThemeFns } from '../common'
+import { jsTypes } from '../constants'
 
 const asyncScopes: RawAtomTheme[] = [
   {
     name: '(c|m)(j|t)s(x)::asyncAwait',
     scope: [],
     rawScope: ['storage.modifier.async', 'keyword.control.flow'],
-    foreground: mapColorsWithRuntimeWeightFn('400'),
+    foreground: colors.magentaColors600,
     fontStyle: ''
   }
 ]

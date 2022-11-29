@@ -1,8 +1,8 @@
-import type { RawAtomTheme } from '../common.js'
+import type { RawAtomTheme } from '../common'
 
-import { mapColorsWithRuntimeWeightFn } from '../../designs/index.js'
-import { gnAtomThemeFns } from '../common.js'
-import { jsxTypes } from '../constants.js'
+import { mapColorsWithRuntimeWeightFn } from '../../designs/index'
+import { gnAtomThemeFns } from '../common'
+import { jsxTypes } from '../constants'
 
 const xScopes: RawAtomTheme[] = [
   {

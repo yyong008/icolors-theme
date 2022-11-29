@@ -4,7 +4,7 @@ import colors, { mapColorsWithRuntimeWeight } from '../designs/index.js'
 
 const menu = (): Partial<Menu> => ({
   ['menu.background']: colors.grayColors300,
-  ['menu.foreground']: colors.greenColors100,
+  ['menu.foreground']: colors.grayColors1300,
   ['menu.selectionForeground']: colors.grayColors100,
   ['menu.selectionBackground']: mapColorsWithRuntimeWeight('900'),
   ['menu.selectionBorder']: '',

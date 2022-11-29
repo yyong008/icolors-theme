@@ -1,4 +1,4 @@
-import type { RawAtomTheme } from '../common.js'
+import type { RawAtomTheme } from '../common'
 
 import colors, { mapColorsWithRuntimeWeightFn } from '../../designs/index'
 import { gnAtomThemeFns } from '../common'
@@ -9,7 +9,7 @@ const functionScopes: RawAtomTheme[] = [
     name: '(c|m)(j|t)s(x)::functionKeyword',
     scope: [],
     rawScope: ['storage.type.function'],
-    foreground: mapColorsWithRuntimeWeightFn('400'),
+    foreground: colors.grayColors1300,
     fontStyle: 'bold'
   },
   {

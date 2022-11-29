@@ -1,15 +1,15 @@
-import type { RawAtomTheme } from '../common.js'
+import type { RawAtomTheme } from '../common'
 
-import colors, { mapColorsWithRuntimeWeightFn } from '../../designs/index.js'
-import { gnAtomThemeFns } from '../common.js'
-import { jsTypes } from '../constants.js'
+import { mapColorsWithRuntimeWeightFn } from '../../designs/index'
+import { gnAtomThemeFns } from '../common'
+import { jsTypes } from '../constants'
 
 const classScopes: RawAtomTheme[] = [
   {
     name: '(c|m)(j|t)s(x)::classKeyword',
     scope: [],
     rawScope: ['storage.type.class'],
-    foreground: mapColorsWithRuntimeWeightFn('400'),
+    foreground: mapColorsWithRuntimeWeightFn('600'),
     fontStyle: ''
   },
   {

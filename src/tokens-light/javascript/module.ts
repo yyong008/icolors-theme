@@ -1,8 +1,8 @@
-import type { RawAtomTheme } from '../common.js'
+import type { RawAtomTheme } from '../common'
 
-import colors, { mapColorsWithRuntimeWeightFn } from '../../designs/index.js'
-import { gnAtomThemeFns } from '../common.js'
-import { jsTypes } from '../constants.js'
+import colors, { mapColorsWithRuntimeWeightFn } from '../../designs/index'
+import { gnAtomThemeFns } from '../common'
+import { jsTypes } from '../constants'
 
 const moduleScopes: RawAtomTheme[] = [
   {
@@ -14,21 +14,21 @@ const moduleScopes: RawAtomTheme[] = [
       'keyword.control.export',
       'keyword.control.default'
     ],
-    foreground: mapColorsWithRuntimeWeightFn('600'),
+    foreground: colors.grayColors1300,
     fontStyle: ''
   },
   {
     name: '(c|m)(j|t)s(x)::module::import-content',
     scope: [],
     rawScope: ['meta.import'],
-    foreground: mapColorsWithRuntimeWeightFn('400'),
+    foreground: mapColorsWithRuntimeWeightFn('600'),
     fontStyle: ''
   },
   {
     name: '(c|m)(j|t)s(x)::module::from::alias',
     scope: ['variable.other.readwrite.alias', 'variable.other.object'],
     rawScope: ['meta.import'],
-    foreground: mapColorsWithRuntimeWeightFn('400'),
+    foreground: mapColorsWithRuntimeWeightFn('600'),
     fontStyle: ''
   },
   {

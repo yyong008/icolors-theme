@@ -21,7 +21,7 @@ const statusBarItemColors = (): Partial<StatusBarItem> => ({
   [`statusBarItem.prominentForeground`]: mapColorsWithRuntimeWeight('500'),
   [`statusBarItem.prominentBackground`]: colors.grayColors1200,
   [`statusBarItem.prominentHoverBackground`]: colors.grayColors1100,
-  [`statusBarItem.remoteBackground`]: colors.grayColors500,
+  [`statusBarItem.remoteBackground`]: mapColorsWithRuntimeWeight('200'),
   [`statusBarItem.remoteForeground`]: mapColorsWithRuntimeWeight('500'),
   [`statusBarItem.errorBackground`]: colors.redColors700,
   [`statusBarItem.errorForeground`]: colors.grayColors100,

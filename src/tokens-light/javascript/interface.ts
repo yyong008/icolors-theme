@@ -1,22 +1,22 @@
-import type { RawAtomTheme } from '../common.js'
+import type { RawAtomTheme } from '../common'
 
-import colors, { mapColorsWithRuntimeWeightFn } from '../../designs/index.js'
-import { gnAtomThemeFns } from '../common.js'
-import { jsTypes } from '../constants.js'
+import { mapColorsWithRuntimeWeightFn } from '../../designs/index'
+import { gnAtomThemeFns } from '../common'
+import { jsTypes } from '../constants'
 
 const interfaceScopes: RawAtomTheme[] = [
   {
     name: '(c|m)ts(x)::interface',
     scope: [],
     rawScope: ['storage.type.interface'],
-    foreground: mapColorsWithRuntimeWeightFn('400'),
+    foreground: mapColorsWithRuntimeWeightFn('600'),
     fontStyle: ''
   },
   {
     name: '(c|m)ts(x)::interfaceName',
     scope: [],
     rawScope: ['meta.interface'],
-    foreground: mapColorsWithRuntimeWeightFn('400'),
+    foreground: mapColorsWithRuntimeWeightFn('700'),
     fontStyle: ''
   }
 ]

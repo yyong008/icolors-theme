@@ -1,36 +1,36 @@
-import type { RawAtomTheme } from '../common.js'
+import type { RawAtomTheme } from '../common'
 
-import colors, { mapColorsWithRuntimeWeight } from '../../designs/index.js'
-import { gnAtomThemeFns } from '../common.js'
-import { jsTypes } from '../constants.js'
+import { mapColorsWithRuntimeWeightFn } from '../../designs/index'
+import { gnAtomThemeFns } from '../common'
+import { jsTypes } from '../constants'
 
 const variableScopes: RawAtomTheme[] = [
   {
     name: '(c|m)(j|t)s(x)::variable.constant',
     scope: [],
     rawScope: ['variable.other.constant'],
-    foreground: mapColorsWithRuntimeWeight('600'),
+    foreground: mapColorsWithRuntimeWeightFn('600'),
     fontStyle: 'bold'
   },
   {
     name: '(c|m)(j|t)s(x)::variable.object.constant',
     scope: [],
     rawScope: ['variable.other.constant.object'],
-    foreground: mapColorsWithRuntimeWeight('600'),
+    foreground: mapColorsWithRuntimeWeightFn('600'),
     fontStyle: ''
   },
   {
     name: '(c|m)(j|t)s(x)::variable.object.constant',
     scope: [],
     rawScope: ['variable.other.readwrite'],
-    foreground: mapColorsWithRuntimeWeight('500'),
+    foreground: mapColorsWithRuntimeWeightFn('700'),
     fontStyle: ''
   },
   {
     name: '(c|m)(j|t)s(x)::variable.property.target',
     scope: [],
     rawScope: ['support.variable.property.target'],
-    foreground: mapColorsWithRuntimeWeight('500'),
+    foreground: mapColorsWithRuntimeWeightFn('500'),
     fontStyle: ''
   }
 ]

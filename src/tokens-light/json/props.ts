@@ -15,7 +15,7 @@ const propsScopes: RawAtomTheme[] = [
     rawScope: ['support.type.property-name'],
     extraScope: [],
     foreground: mapColorsWithRuntimeWeightFn('900'),
-    fontStyle: 'bold italic'
+    fontStyle: 'bold'
   },
   {
     name: 'json::value',
