@@ -11,7 +11,7 @@ const baseColors = (): Partial<BaseColors> => ({
 })
 
 const baseColorsWidget = () => ({
-  'widget.shadow': ''
+  'widget.shadow': mapColorsWithRuntimeWeight('100')
 })
 
 const baseColorsSelection = () => ({

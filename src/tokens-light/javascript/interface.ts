@@ -9,7 +9,7 @@ const interfaceScopes: RawAtomTheme[] = [
     name: '(c|m)ts(x)::interface',
     scope: [],
     rawScope: ['storage.type.interface'],
-    foreground: colors.purpleColors400,
+    foreground: mapColorsWithRuntimeWeightFn('400'),
     fontStyle: ''
   },
   {

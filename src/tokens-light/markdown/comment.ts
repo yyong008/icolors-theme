@@ -13,7 +13,7 @@ const commentScopes: RawAtomTheme[] = [
       'comment.line.number-sign.shell'
     ],
     rawScope: [],
-    foreground: colors.limeColors500,
+    foreground: colors.grayColors600,
     fontStyle: ''
   }
 ]

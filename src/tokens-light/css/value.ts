@@ -13,21 +13,21 @@ const valueScopes: RawAtomTheme[] = [
       'support.constant.property-value',
       'meta.embedded.block'
     ],
-    foreground: mapColorsWithRuntimeWeightFn('200'),
+    foreground: mapColorsWithRuntimeWeightFn('600'),
     fontStyle: ''
   },
   {
     name: 'styles::value.number',
     scope: [],
     rawScope: ['constant.numeric'],
-    foreground: mapColorsWithRuntimeWeightFn('300'),
+    foreground: mapColorsWithRuntimeWeightFn('600'),
     fontStyle: ''
   },
   {
     name: 'styles::css:value',
     scope: [],
     rawScope: ['support.function.misc'],
-    foreground: mapColorsWithRuntimeWeightFn('300'),
+    foreground: mapColorsWithRuntimeWeightFn('600'),
     fontStyle: ''
   },
   {

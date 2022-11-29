@@ -1,9 +1,9 @@
 import type Toolbar from '../types/Toolbar.js'
 
-import { mapColorsWithRuntimeWeight } from '../designs/index.js'
+import colors, { mapColorsWithRuntimeWeight } from '../designs/index.js'
 
 const actionColors = (): Partial<Toolbar> => ({
-  ['toolbar.hoverBackground']: mapColorsWithRuntimeWeight('300'),
+  ['toolbar.hoverBackground']: colors.grayColors1300,
   ['toolbar.hoverOutline']: mapColorsWithRuntimeWeight('300'),
   ['toolbar.activeBackground']: mapColorsWithRuntimeWeight('600')
 })

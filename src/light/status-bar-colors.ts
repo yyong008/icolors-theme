@@ -4,12 +4,20 @@ import colors, { mapColorsWithRuntimeWeight } from '../designs/index.js'
 
 const statusBarColors = (): Partial<StatusBar> => ({
   [`statusBar.foreground`]: mapColorsWithRuntimeWeight('500'),
-  [`statusBar.background`]: colors.grayColors300
+  [`statusBar.background`]: colors.grayColors400,
+  ['statusBar.border']: mapColorsWithRuntimeWeight('400'),
+  ['statusBar.debuggingBackground']: '',
+  ['statusBar.debuggingForeground']: '',
+  ['statusBar.debuggingBorder']: '',
+  ['statusBar.noFolderForeground']: '',
+  ['statusBar.noFolderBackground']: '',
+  ['statusBar.noFolderBorder']: '',
+  ['statusBar.focusBorder']: ''
 })
 
 const statusBarItemColors = (): Partial<StatusBarItem> => ({
   [`statusBarItem.activeBackground`]: mapColorsWithRuntimeWeight('1000'),
-  [`statusBarItem.hoverBackground`]: colors.grayColors100,
+  [`statusBarItem.hoverBackground`]: colors.grayColors500,
   [`statusBarItem.prominentForeground`]: mapColorsWithRuntimeWeight('500'),
   [`statusBarItem.prominentBackground`]: colors.grayColors1200,
   [`statusBarItem.prominentHoverBackground`]: colors.grayColors1100,

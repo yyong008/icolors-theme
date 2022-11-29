@@ -1,23 +1,23 @@
-import type { RawAtomTheme } from '../common.js'
+import type { RawAtomTheme } from '../common'
 
-import colors, { mapColorsWithRuntimeWeightFn } from '../../designs/index.js'
-import { gnAtomThemeFns } from '../common.js'
-import { dockerFileTypes } from '../constants.js'
+import { mapColorsWithRuntimeWeightFn } from '../../designs/index'
+import { gnAtomThemeFns } from '../common'
+import { dockerFileTypes } from '../constants'
 
 const dockerScopes: RawAtomTheme[] = [
-  {
-    name: 'dockerfile::comment',
-    scope: [],
-    rawScope: ['comment.line.number-sign.dockerfile'],
-    foreground: colors.grayColors800,
-    fontStyle: 'bold italic'
-  },
   {
     name: 'dockerfile::source',
     scope: [],
     rawScope: ['source.dockerfile'],
-    foreground: mapColorsWithRuntimeWeightFn('600'),
+    foreground: mapColorsWithRuntimeWeightFn('700'),
     fontStyle: ''
+  },
+  {
+    name: 'dockerfile::command::key',
+    scope: [],
+    rawScope: ['keyword.other.special-method'],
+    foreground: mapColorsWithRuntimeWeightFn('800'),
+    fontStyle: 'bold'
   },
   {
     name: 'dockerfile::special-method',

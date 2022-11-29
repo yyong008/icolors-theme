@@ -25,7 +25,7 @@ const notificationToast = (): Partial<NotificationToast> => ({
 })
 
 const notifications = (): Partial<Notifications> => ({
-  ['notifications.foreground']: mapColorsWithRuntimeWeight('500'),
+  ['notifications.foreground']: colors.grayColors1200,
   ['notifications.background']: colors.grayColors300,
   ['notifications.border']: ''
 })

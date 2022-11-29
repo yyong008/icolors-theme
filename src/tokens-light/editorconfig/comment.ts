@@ -2,7 +2,7 @@ import type { RawAtomTheme } from '../common.js'
 
 import colors from '../../designs/index.js'
 import { gnAtomThemeFns } from '../common.js'
-import { dockerFileTypes } from '../constants.js'
+import { editorconfigTypes } from '../constants.js'
 
 const editorconfigScopes: RawAtomTheme[] = [
   {
@@ -14,4 +14,4 @@ const editorconfigScopes: RawAtomTheme[] = [
   }
 ]
 
-export default gnAtomThemeFns(editorconfigScopes, dockerFileTypes)
+export default gnAtomThemeFns(editorconfigScopes, editorconfigTypes)

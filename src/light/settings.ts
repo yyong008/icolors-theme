@@ -7,7 +7,7 @@ import colors, {
 
 const settingEditor = (): Partial<Settings> => ({
   ['settings.headerForeground']: mapColorsWithRuntimeWeight('600'),
-  ['settings.modifiedItemIndicator']: mapColorsReverseWithRuntimeWeight('500'),
+  ['settings.modifiedItemIndicator']: colors.greenColors500,
   ['settings.dropdownBackground']: colors.grayColors500,
   ['settings.dropdownForeground']: colors.grayColors1100,
   ['settings.dropdownBorder']: '',
@@ -22,10 +22,10 @@ const settingEditor = (): Partial<Settings> => ({
   ['settings.numberInputBackground']: colors.grayColors300,
   ['settings.numberInputForeground']: colors.grayColors1100,
   ['settings.numberInputBorder']: '',
-  ['settings.focusedRowBackground']: mapColorsReverseWithRuntimeWeight('800'),
+  ['settings.focusedRowBackground']: mapColorsWithRuntimeWeight('100'),
   ['settings.focusedRowBorder']: mapColorsReverseWithRuntimeWeight('300'),
-  ['settings.headerBorder']: mapColorsWithRuntimeWeight('700'),
-  ['settings.sashBorder']: mapColorsWithRuntimeWeight('700')
+  ['settings.headerBorder']: mapColorsWithRuntimeWeight('300'),
+  ['settings.sashBorder']: mapColorsWithRuntimeWeight('200')
 })
 
 export default {

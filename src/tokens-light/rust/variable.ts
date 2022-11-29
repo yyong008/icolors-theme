@@ -9,7 +9,7 @@ const variableScopes: RawAtomTheme[] = [
     name: 'rust::variable',
     scope: [],
     rawScope: ['variable.other'],
-    foreground: colors.grayColors100,
+    foreground: colors.grayColors1300,
     fontStyle: 'bold'
   }
 ]

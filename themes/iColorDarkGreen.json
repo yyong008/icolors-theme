@@ -66,16 +66,16 @@
     "extensionButton.prominentForeground": "#135200",
     "extensionButton.prominentBackground": "#95de64",
     "extensionButton.prominentHoverBackground": "#b7eb8f",
-    "gitDecoration.addedResourceForeground": "#f0f0f0",
-    "gitDecoration.modifiedResourceForeground": "#ffbb96",
-    "gitDecoration.deletedResourceForeground": "#434343",
-    "gitDecoration.renamedResourceForeground": "#69c0ff",
-    "gitDecoration.stageModifiedResourceForeground": "#40a9ff",
-    "gitDecoration.stageDeletedResourceForeground": "#092b00",
-    "gitDecoration.untrackedResourceForeground": "#389e0d",
-    "gitDecoration.ignoredResourceForeground": "#237804",
-    "gitDecoration.conflictingResourceForeground": "#fadb14",
-    "gitDecoration.submoduleResourceForeground": "#13c2c2",
+    "gitDecoration.addedResourceForeground": "#81b88b",
+    "gitDecoration.modifiedResourceForeground": "#E2C08D",
+    "gitDecoration.deletedResourceForeground": "#c74e39",
+    "gitDecoration.renamedResourceForeground": "#73C991",
+    "gitDecoration.stageModifiedResourceForeground": "#E2C08D",
+    "gitDecoration.stageDeletedResourceForeground": "#c74e39",
+    "gitDecoration.untrackedResourceForeground": "#73C991",
+    "gitDecoration.ignoredResourceForeground": "#8C8C8C",
+    "gitDecoration.conflictingResourceForeground": "#e4676b",
+    "gitDecoration.submoduleResourceForeground": "#8db9e2",
     "input.foreground": "#ffffff",
     "input.background": "#092b00",
     "input.border": "#b7eb8f",
@@ -1590,8 +1590,8 @@
     {
       "name": "html::comment",
       "scope": [
-        "punctuation.definition.comment.dockerfile",
-        "comment.block.dockerfile"
+        "punctuation.definition.comment.html",
+        "comment.block.html"
       ],
       "settings": {
         "foreground": "#595959",
@@ -1601,7 +1601,7 @@
     {
       "name": "html::attributeName",
       "scope": [
-        "entity.other.attribute-name.dockerfile"
+        "entity.other.attribute-name.html"
       ],
       "settings": {
         "foreground": "#95de64",
@@ -1611,7 +1611,7 @@
     {
       "name": "html::attributeClass",
       "scope": [
-        "meta.attribute.class.dockerfile"
+        "meta.attribute.class.html"
       ],
       "settings": {
         "foreground": "#b7eb8f",
@@ -1621,7 +1621,7 @@
     {
       "name": "html::attributeId",
       "scope": [
-        "meta.attribute.id.dockerfile"
+        "meta.attribute.id.html"
       ],
       "settings": {
         "foreground": "#b7eb8f",
@@ -1631,8 +1631,8 @@
     {
       "name": "html::attributeQuoted",
       "scope": [
-        "string.quoted.double.dockerfile",
-        "string.quoted.single.dockerfile"
+        "string.quoted.double.html",
+        "string.quoted.single.html"
       ],
       "settings": {
         "foreground": "#b7eb8f",
@@ -1652,7 +1652,7 @@
     {
       "name": "html::punctuation::separatorScope",
       "scope": [
-        "punctuation.separator.key-value.dockerfile"
+        "punctuation.separator.key-value.html"
       ],
       "settings": {
         "foreground": "#135200",
@@ -2293,7 +2293,7 @@
     {
       "name": "editorconfig::comment",
       "scope": [
-        "comment.line.number-sign.editorconfig.dockerfile"
+        "comment.line.number-sign.editorconfig.editorconfig"
       ],
       "settings": {
         "foreground": "#595959",

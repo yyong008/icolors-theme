@@ -12,7 +12,7 @@ const tagScopes: RawAtomTheme[] = [
       'punctuation.definition.tag.begin',
       'punctuation.definition.tag.end'
     ],
-    foreground: colors.magentaColors400,
+    foreground: colors.grayColors700,
     fontStyle: ''
   },
   {
@@ -26,7 +26,7 @@ const tagScopes: RawAtomTheme[] = [
     name: 'html::tagProps',
     scope: [],
     rawScope: ['entity.other.attribute-name'],
-    foreground: mapColorsWithRuntimeWeightFn('300'),
+    foreground: mapColorsWithRuntimeWeightFn('500'),
     fontStyle: ''
   },
   {

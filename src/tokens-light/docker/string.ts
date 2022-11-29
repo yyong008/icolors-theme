@@ -6,11 +6,11 @@ import { dockerFileTypes } from '../constants.js'
 
 const stringScopes: RawAtomTheme[] = [
   {
-    name: 'dockerfile::comment',
+    name: 'dockerfile::quoted',
     scope: [],
     rawScope: ['string.quoted.single', 'string.quoted.double'],
-    foreground: colors.grayColors600,
-    fontStyle: 'bold italic'
+    foreground: colors.grayColors800,
+    fontStyle: 'italic'
   }
 ]
 

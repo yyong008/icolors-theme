@@ -2,7 +2,7 @@ import type { RawAtomTheme } from '../common'
 
 import colors from '../../designs/index'
 import { gnAtomThemeFns } from '../common'
-import { dockerFileTypes } from '../constants'
+import { htmlTypes } from '../constants'
 
 const htmlCommentScopes: RawAtomTheme[] = [
   {
@@ -14,4 +14,4 @@ const htmlCommentScopes: RawAtomTheme[] = [
   }
 ]
 
-export default gnAtomThemeFns(htmlCommentScopes, dockerFileTypes)
+export default gnAtomThemeFns(htmlCommentScopes, htmlTypes)

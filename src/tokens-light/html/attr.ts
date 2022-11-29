@@ -2,35 +2,35 @@ import type { RawAtomTheme } from '../common.js'
 
 import colors, { mapColorsWithRuntimeWeightFn } from '../../designs/index.js'
 import { gnAtomThemeFns } from '../common.js'
-import { dockerFileTypes } from '../constants.js'
+import { htmlTypes } from '../constants.js'
 
 const attrScopes: RawAtomTheme[] = [
   {
     name: 'html::attributeName',
     scope: [],
     rawScope: ['entity.other.attribute-name'],
-    foreground: mapColorsWithRuntimeWeightFn('400'),
-    fontStyle: ''
+    foreground: colors.grayColors1100,
+    fontStyle: 'bold'
   },
   {
     name: 'html::attributeClass',
     scope: [],
     rawScope: ['meta.attribute.class'],
-    foreground: mapColorsWithRuntimeWeightFn('300'),
+    foreground: mapColorsWithRuntimeWeightFn('600'),
     fontStyle: ''
   },
   {
     name: 'html::attributeId',
     scope: [],
     rawScope: ['meta.attribute.id'],
-    foreground: mapColorsWithRuntimeWeightFn('300'),
+    foreground: mapColorsWithRuntimeWeightFn('600'),
     fontStyle: 'bold'
   },
   {
     name: 'html::attributeQuoted',
     scope: [],
     rawScope: ['string.quoted.double', 'string.quoted.single'],
-    foreground: mapColorsWithRuntimeWeightFn('300'),
+    foreground: mapColorsWithRuntimeWeightFn('600'),
     fontStyle: ''
   },
   {
@@ -38,7 +38,7 @@ const attrScopes: RawAtomTheme[] = [
     scope: [],
     rawScope: [],
     extraScope: ['text.html.derivative'],
-    foreground: colors.grayColors100,
+    foreground: colors.grayColors900,
     fontStyle: ''
   },
   {
@@ -50,4 +50,4 @@ const attrScopes: RawAtomTheme[] = [
   }
 ]
 
-export default gnAtomThemeFns(attrScopes, dockerFileTypes)
+export default gnAtomThemeFns(attrScopes, htmlTypes)

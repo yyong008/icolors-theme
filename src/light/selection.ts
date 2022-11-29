@@ -1,8 +1,8 @@
-import { mapColorsReverseWithRuntimeWeightAlpha } from 'src/designs/index'
+import colors from 'src/designs/index'
 import type Selection from '../types/Selection'
 
 const selection = (): Partial<Selection> => ({
-  ['selection.background']: ''
+  ['selection.background']: colors.redColors400
 })
 
 export default { selection }

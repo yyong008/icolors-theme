@@ -2,7 +2,7 @@ import type { RawAtomTheme } from '../common'
 
 import colors, { mapColorsWithRuntimeWeightFn } from '../../designs/index'
 import { gnAtomThemeFns } from '../common'
-import { dockerFileTypes } from '../constants'
+import { htmlTypes } from '../constants'
 
 const attrScopes: RawAtomTheme[] = [
   {
@@ -50,4 +50,4 @@ const attrScopes: RawAtomTheme[] = [
   }
 ]
 
-export default gnAtomThemeFns(attrScopes, dockerFileTypes)
+export default gnAtomThemeFns(attrScopes, htmlTypes)

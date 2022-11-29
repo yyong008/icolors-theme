@@ -1,18 +1,18 @@
 import type GitDecoration from '../types/Git.js'
 
-import colors from '../designs/index.js'
+// import colors from '../designs/index.js'
 
 const gitDecoration = (): Partial<GitDecoration> => ({
-  ['gitDecoration.addedResourceForeground']: colors.grayColors400,
-  ['gitDecoration.modifiedResourceForeground']: colors.volcanoColors300,
-  ['gitDecoration.deletedResourceForeground']: colors.grayColors900,
-  ['gitDecoration.renamedResourceForeground']: colors.blueColors400,
-  ['gitDecoration.stageModifiedResourceForeground']: colors.blueColors500,
-  ['gitDecoration.stageDeletedResourceForeground']: colors.greenColors1000,
-  ['gitDecoration.untrackedResourceForeground']: colors.greenColors700,
-  ['gitDecoration.ignoredResourceForeground']: colors.greenColors800,
-  ['gitDecoration.conflictingResourceForeground']: colors.yellowColors600,
-  ['gitDecoration.submoduleResourceForeground']: colors.cyanColors600
+  ['gitDecoration.addedResourceForeground']: '#587c0c',
+  ['gitDecoration.modifiedResourceForeground']: '#895503',
+  ['gitDecoration.deletedResourceForeground']: '#ad0707',
+  ['gitDecoration.renamedResourceForeground']: '#007100',
+  ['gitDecoration.stageModifiedResourceForeground']: '#895503',
+  ['gitDecoration.stageDeletedResourceForeground']: '#ad0707',
+  ['gitDecoration.untrackedResourceForeground']: '#007100',
+  ['gitDecoration.ignoredResourceForeground']: '#8E8E90',
+  ['gitDecoration.conflictingResourceForeground']: '#e4676b',
+  ['gitDecoration.submoduleResourceForeground']: '#1258a7'
 })
 
 export default { gitDecoration }

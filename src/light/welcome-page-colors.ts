@@ -5,7 +5,6 @@ import colors, { mapColorsWithRuntimeWeight } from '../designs/index'
 
 const welcomePage = (): Partial<WelcomePage> => ({
   ['welcomePage.background']: colors.grayColors300,
-  // ['welcomePage.foreground']: colors.grayColors1100,
   ['welcomePage.progress.background']: mapColorsWithRuntimeWeight('900'),
   ['welcomePage.progress.foreground']: mapColorsWithRuntimeWeight('300'),
   ['welcomePage.tileBackground']: colors.grayColors500,

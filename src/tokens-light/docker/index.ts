@@ -1,6 +1,7 @@
-import docker from './docker.js'
-import string from './string.js'
+import docker from './docker'
+import string from './string'
+import comment from './comment'
 
 export default function dockerfile() {
-  return [...docker, ...string]
+  return [...docker, ...string, ...comment]
 }

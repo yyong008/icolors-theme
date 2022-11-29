@@ -12,10 +12,10 @@ const propsScopes: RawAtomTheme[] = [
   {
     name: 'json::key',
     scope: [],
-    rawScope: [],
-    extraScope: ['support.type.property-name.json.comments'],
-    foreground: mapColorsWithRuntimeWeightFn('600'),
-    fontStyle: 'bold'
+    rawScope: ['support.type.property-name'],
+    extraScope: [],
+    foreground: mapColorsWithRuntimeWeightFn('900'),
+    fontStyle: 'bold italic'
   },
   {
     name: 'json::value',
