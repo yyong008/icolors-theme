@@ -19,7 +19,7 @@ const baseColorsSelection = () => ({
 })
 
 const baseColorsIcon = () => ({
-  'icon.foreground': ''
+  'icon.foreground': colors.redColors1000
 })
 
 const baseColorsSash = () => ({

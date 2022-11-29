@@ -9,7 +9,7 @@ const stringScopes: RawAtomTheme[] = [
     name: 'shell::string',
     scope: [],
     rawScope: ['string.quoted.double', 'string.quoted.single'],
-    foreground: colors.grayColors100,
+    foreground: colors.grayColors1200,
     fontStyle: 'italic'
   }
 ]

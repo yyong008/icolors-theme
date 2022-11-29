@@ -9,7 +9,7 @@ const builtinScopes: RawAtomTheme[] = [
     name: 'shell::builtin',
     scope: [],
     rawScope: ['support.function.builtin'],
-    foreground: mapColorsWithRuntimeWeightFn('500'),
+    foreground: mapColorsWithRuntimeWeightFn('600'),
     fontStyle: 'bold'
   }
 ]

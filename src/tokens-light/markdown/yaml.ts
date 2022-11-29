@@ -9,8 +9,6 @@ const yamlScopes: RawAtomTheme[] = [
     name: 'markdown::yaml',
     scope: [],
     rawScope: [
-      'punctuation.definition',
-      'fenced_code.block.language',
       'punctuation.definition.raw',
       'punctuation.definition.link.description.begin',
       'punctuation.definition.link.description.end',

@@ -9,7 +9,7 @@ const modifierScopes: RawAtomTheme[] = [
     name: 'shell::modifier',
     scope: [],
     rawScope: ['storage.modifier'],
-    foreground: mapColorsWithRuntimeWeightFn('600'),
+    foreground: mapColorsWithRuntimeWeightFn('700'),
     fontStyle: ''
   }
 ]

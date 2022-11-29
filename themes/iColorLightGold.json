@@ -48,8 +48,8 @@
     "editor.selectionBackground": "#878b9180",
     "editor.wordHighlightBackground": "#4a4a7680",
     "editor.wordHighlightStrongBackground": "#6a6a9680",
-    "editor.lineHighlightBackground": "#3e3d3290",
-    "editorCursor.foreground": "#f8f8f0",
+    "editor.lineHighlightBackground": "#fffbe6",
+    "editor.lineHighlightBorder": "#ffe58f",
     "editorWhitespace.foreground": "#464741",
     "editorIndentGuide.background": "#464741",
     "editorIndentGuide.activeBackground": "#767771",
@@ -920,7 +920,7 @@
         "variable.language.this.tsx"
       ],
       "settings": {
-        "foreground": "#ffc53d",
+        "foreground": "#36cfc9",
         "fontStyle": "italic"
       }
     },
@@ -937,8 +937,8 @@
         "variable.object.property.tsx"
       ],
       "settings": {
-        "foreground": "#ffd666",
-        "fontStyle": "bold"
+        "foreground": "#262626",
+        "fontStyle": ""
       }
     },
     {
@@ -955,23 +955,6 @@
       ],
       "settings": {
         "foreground": "#ffd666",
-        "fontStyle": "bold"
-      }
-    },
-    {
-      "name": "(c|m)(j|t)s(x)::property",
-      "scope": [
-        "variable.object.property.js",
-        "variable.object.property.mjs",
-        "variable.object.property.cjs",
-        "variable.object.property.jsx",
-        "variable.object.property.ts",
-        "variable.object.property.mts",
-        "variable.object.property.cts",
-        "variable.object.property.tsx"
-      ],
-      "settings": {
-        "foreground": "#ffe58f",
         "fontStyle": "bold"
       }
     },
@@ -1319,7 +1302,7 @@
         "string.quoted.single.json"
       ],
       "settings": {
-        "foreground": "#5cdbd3",
+        "foreground": "#13c2c2",
         "fontStyle": ""
       }
     },
@@ -1330,7 +1313,7 @@
         "constant.numeric.json"
       ],
       "settings": {
-        "foreground": "#5cdbd3",
+        "foreground": "#13c2c2",
         "fontStyle": ""
       }
     },
@@ -1875,8 +1858,8 @@
         "punctuation.definition.bold"
       ],
       "settings": {
-        "foreground": "#bae637",
-        "fontStyle": ""
+        "foreground": "#d48806",
+        "fontStyle": "bold"
       }
     },
     {
@@ -1886,7 +1869,7 @@
         "markup.underline.link.markdown"
       ],
       "settings": {
-        "foreground": "#95de64",
+        "foreground": "#faad14",
         "fontStyle": ""
       }
     },
@@ -1909,15 +1892,24 @@
         "punctuation.definition.heading.markdown"
       ],
       "settings": {
-        "foreground": "#5cdbd3",
+        "foreground": "#ffd666",
         "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "markdown::punctuation",
+      "scope": [
+        "punctuation.definition.markdown",
+        "markup.fenced_code.block.markdown"
+      ],
+      "settings": {
+        "foreground": "#141414",
+        "fontStyle": ""
       }
     },
     {
       "name": "markdown::yaml",
       "scope": [
-        "punctuation.definition.markdown",
-        "fenced_code.block.language.markdown",
         "punctuation.definition.raw.markdown",
         "punctuation.definition.link.description.begin.markdown",
         "punctuation.definition.link.description.end.markdown",
@@ -1926,6 +1918,16 @@
       "settings": {
         "foreground": "#d48806",
         "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "markdown::paragraph",
+      "scope": [
+        "meta.paragraph"
+      ],
+      "settings": {
+        "foreground": "#141414",
+        "fontStyle": ""
       }
     },
     {
@@ -2461,7 +2463,7 @@
         "string.quoted.single.shell"
       ],
       "settings": {
-        "foreground": "#ffffff",
+        "foreground": "#141414",
         "fontStyle": "italic"
       }
     },
@@ -2471,7 +2473,7 @@
         "storage.modifier.shell"
       ],
       "settings": {
-        "foreground": "#faad14",
+        "foreground": "#d48806",
         "fontStyle": ""
       }
     },
@@ -2537,7 +2539,7 @@
         "support.function.builtin.shell"
       ],
       "settings": {
-        "foreground": "#ffc53d",
+        "foreground": "#faad14",
         "fontStyle": "bold"
       }
     }

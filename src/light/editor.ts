@@ -21,12 +21,19 @@ const editor = (): Partial<Editor> => ({
   ['editor.selectionHighlightBackground']: mapColorsWithRuntimeWeight('200'),
   ['editor.selectionBackground']: '#878b9180',
   ['editor.wordHighlightBackground']: '#4a4a7680',
-  ['editor.wordHighlightStrongBackground']: '#6a6a9680',
-  ['editor.lineHighlightBackground']: '#3e3d3290'
+  ['editor.wordHighlightStrongBackground']: '#6a6a9680'
+  // ['editor.lineHighlightBackground']: '#3e3d3290'
+})
+
+// TODO: type
+const editorLineHight = () => ({
+  ['editor.lineHighlightBackground']: mapColorsWithRuntimeWeight('100'),
+  ['editor.lineHighlightBorder']: mapColorsWithRuntimeWeight('300')
 })
 
 const editorCursor = (): Partial<EditorCursor> => ({
-  ['editorCursor.foreground']: '#f8f8f0'
+  ['editorCursor.foreground']: '',
+  ['editorCursor.background']: ''
 })
 
 const editorWhitespace = (): Partial<EditorWhitespace> => ({
@@ -86,6 +93,7 @@ const editorCommentsWidget = (): Partial<EditorCommentsWidget> => ({
 
 export default {
   editor,
+  editorLineHight,
   editorCursor,
   editorWhitespace,
   editorIndentGuide,

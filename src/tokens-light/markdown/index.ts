@@ -1,10 +1,11 @@
-import heading from './heading.js'
-import comment from './comment.js'
-import order from './order.js'
-import bold from './bold.js'
-import link from './link.js'
-import punctuation from './punctuation.js'
-import yaml from './yaml.js'
+import heading from './heading'
+import comment from './comment'
+import order from './order'
+import bold from './bold'
+import link from './link'
+import punctuation from './punctuation'
+import yaml from './yaml'
+import paragraph from './paragraph'
 
 export default function markdownLanguage() {
   return [
@@ -14,6 +15,7 @@ export default function markdownLanguage() {
     ...bold,
     ...link,
     ...punctuation,
-    ...yaml
+    ...yaml,
+    ...paragraph
   ]
 }

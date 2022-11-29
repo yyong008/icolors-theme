@@ -21,14 +21,14 @@ const propsScopes: RawAtomTheme[] = [
     name: 'json::value',
     scope: [],
     rawScope: ['string.quoted.double', 'string.quoted.single'],
-    foreground: mapColorsReverseWithRuntimeWeightFn('400'),
+    foreground: mapColorsReverseWithRuntimeWeightFn('600'),
     fontStyle: ''
   },
   {
     name: 'json::constant::{language, numberic}',
     scope: [],
     rawScope: ['constant.language', 'constant.numeric'],
-    foreground: mapColorsReverseWithRuntimeWeightFn('400'),
+    foreground: mapColorsReverseWithRuntimeWeightFn('600'),
     fontStyle: ''
   }
 ]
