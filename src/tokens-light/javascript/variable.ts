@@ -9,7 +9,7 @@ const variableScopes: RawAtomTheme[] = [
     name: '(c|m)(j|t)s(x)::variable.constant',
     scope: [],
     rawScope: ['variable.other.constant'],
-    foreground: colors.cyanColors600,
+    foreground: mapColorsWithRuntimeWeight('600'),
     fontStyle: 'bold'
   },
   {
