@@ -31,7 +31,8 @@ const operatorScopes: RawAtomTheme[] = [
       'punctuation.accessor.optional',
       'keyword.generator.asterisk',
       'keyword.control.as',
-      'keyword.control.switch'
+      'keyword.control.switch',
+      'keyword.control.trycatch'
     ],
     foreground: colors.magentaColors600,
     fontStyle: 'bold'

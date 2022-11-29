@@ -571,6 +571,7 @@
         "keyword.generator.asterisk.js",
         "keyword.control.as.js",
         "keyword.control.switch.js",
+        "keyword.control.trycatch.js",
         "keyword.operator.assignment.mjs",
         "keyword.operator.comparison.mjs",
         "keyword.operator.logical.mjs",
@@ -594,6 +595,7 @@
         "keyword.generator.asterisk.mjs",
         "keyword.control.as.mjs",
         "keyword.control.switch.mjs",
+        "keyword.control.trycatch.mjs",
         "keyword.operator.assignment.cjs",
         "keyword.operator.comparison.cjs",
         "keyword.operator.logical.cjs",
@@ -617,6 +619,7 @@
         "keyword.generator.asterisk.cjs",
         "keyword.control.as.cjs",
         "keyword.control.switch.cjs",
+        "keyword.control.trycatch.cjs",
         "keyword.operator.assignment.jsx",
         "keyword.operator.comparison.jsx",
         "keyword.operator.logical.jsx",
@@ -640,6 +643,7 @@
         "keyword.generator.asterisk.jsx",
         "keyword.control.as.jsx",
         "keyword.control.switch.jsx",
+        "keyword.control.trycatch.jsx",
         "keyword.operator.assignment.ts",
         "keyword.operator.comparison.ts",
         "keyword.operator.logical.ts",
@@ -663,6 +667,7 @@
         "keyword.generator.asterisk.ts",
         "keyword.control.as.ts",
         "keyword.control.switch.ts",
+        "keyword.control.trycatch.ts",
         "keyword.operator.assignment.mts",
         "keyword.operator.comparison.mts",
         "keyword.operator.logical.mts",
@@ -686,6 +691,7 @@
         "keyword.generator.asterisk.mts",
         "keyword.control.as.mts",
         "keyword.control.switch.mts",
+        "keyword.control.trycatch.mts",
         "keyword.operator.assignment.cts",
         "keyword.operator.comparison.cts",
         "keyword.operator.logical.cts",
@@ -709,6 +715,7 @@
         "keyword.generator.asterisk.cts",
         "keyword.control.as.cts",
         "keyword.control.switch.cts",
+        "keyword.control.trycatch.cts",
         "keyword.operator.assignment.tsx",
         "keyword.operator.comparison.tsx",
         "keyword.operator.logical.tsx",
@@ -731,7 +738,8 @@
         "punctuation.accessor.optional.tsx",
         "keyword.generator.asterisk.tsx",
         "keyword.control.as.tsx",
-        "keyword.control.switch.tsx"
+        "keyword.control.switch.tsx",
+        "keyword.control.trycatch.tsx"
       ],
       "settings": {
         "foreground": "#eb2f96",
@@ -751,7 +759,7 @@
         "keyword.control.conditional.tsx"
       ],
       "settings": {
-        "foreground": "#13c2c2",
+        "foreground": "#eb2f96",
         "fontStyle": ""
       }
     },
@@ -869,7 +877,7 @@
         "constant.character.escape.tsx"
       ],
       "settings": {
-        "foreground": "#13c2c2",
+        "foreground": "#faad14",
         "fontStyle": ""
       }
     },
