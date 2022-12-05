@@ -11,7 +11,7 @@ const baseColors = (): Partial<BaseColors> => ({
 })
 
 const baseColorsWidget = () => ({
-  'widget.shadow': mapColorsWithRuntimeWeight('100')
+  'widget.shadow': colors.grayColors1300
 })
 
 const baseColorsSelection = () => ({
@@ -19,7 +19,7 @@ const baseColorsSelection = () => ({
 })
 
 const baseColorsIcon = () => ({
-  'icon.foreground': ''
+  'icon.foreground': colors.grayColors1300
 })
 
 const baseColorsSash = () => ({

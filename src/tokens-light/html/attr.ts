@@ -1,6 +1,9 @@
 import type { RawAtomTheme } from '../common.js'
 
-import colors, { mapColorsWithRuntimeWeightFn } from '../../designs/index.js'
+import colors, {
+  mapColorsWithRuntimeWeightFn,
+  mapColorsReverseWithRuntimeWeightFn
+} from '../../designs/index.js'
 import { gnAtomThemeFns } from '../common.js'
 import { htmlTypes } from '../constants.js'
 
@@ -9,7 +12,7 @@ const attrScopes: RawAtomTheme[] = [
     name: 'html::attributeName',
     scope: [],
     rawScope: ['entity.other.attribute-name'],
-    foreground: colors.grayColors1100,
+    foreground: mapColorsReverseWithRuntimeWeightFn('700'),
     fontStyle: 'bold'
   },
   {
@@ -23,7 +26,7 @@ const attrScopes: RawAtomTheme[] = [
     name: 'html::attributeId',
     scope: [],
     rawScope: ['meta.attribute.id'],
-    foreground: mapColorsWithRuntimeWeightFn('600'),
+    foreground: colors.grayColors1100,
     fontStyle: 'bold'
   },
   {

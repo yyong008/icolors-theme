@@ -7,17 +7,20 @@ import type {
   DebugConsoleInputIcon
 } from '../types/Debug.js'
 
-import colors from '../designs/index.js'
+import colors, {
+  mapColorsWithRuntimeWeight,
+  mapColorsReverseWithRuntimeWeight
+} from '../designs/index.js'
 
 const debugToolBar = (): Partial<DebugToolBar> => ({
-  ['debugToolBar.background']: colors.redColors400,
+  ['debugToolBar.background']: colors.grayColors300,
   ['debugToolBar.border']: ''
 })
 
 const debugView = (): Partial<DebugView> => ({
-  ['debugView.exceptionLabelForeground']: '',
+  ['debugView.exceptionLabelForeground']: colors.grayColors100,
   ['debugView.exceptionLabelBackground']: '',
-  ['debugView.stateLabelForeground']: '',
+  ['debugView.stateLabelForeground']: colors.grayColors100,
   ['debugView.stateLabelBackground']: '',
   ['debugView.valueChangedHighlight']: ''
 })

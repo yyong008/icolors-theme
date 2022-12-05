@@ -14,20 +14,19 @@ import colors, { mapColorsWithRuntimeWeight } from '../designs/index'
 // quickInputTitle
 
 const pickerGroup = (): Partial<PickerGroup> => ({
-  ['pickerGroup.foreground']: '#75715E',
+  ['pickerGroup.foreground']: '',
   ['pickerGroup.border']: ''
 })
 
 const quickInput = (): Partial<QuickInput> => ({
-  ['quickInput.background']: colors.grayColors300,
-  ['quickInput.foreground']: mapColorsWithRuntimeWeight('500')
+  ['quickInput.background']: mapColorsWithRuntimeWeight('100'),
+  ['quickInput.foreground']: colors.greenColors1000
 })
 
 const quickInputList = (): Partial<QuickInputList> => ({
-  ['quickInputList.focusBackground']: colors.grayColors300,
+  ['quickInputList.focusBackground']: mapColorsWithRuntimeWeight('400'),
   ['quickInputList.focusForeground']: colors.grayColors1100,
-  ['quickInputList.focusIconForeground']: mapColorsWithRuntimeWeight('400')
-  // ['quickInputList.background']: colors.grayColors1100
+  ['quickInputList.focusIconForeground']: ''
 })
 
 const quickInputTitle = (): Partial<QuickInputTitle> => ({

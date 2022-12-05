@@ -9,7 +9,7 @@ import type {
 import colors, { mapColorsWithRuntimeWeight } from '../designs/index.js'
 
 const panel = (): Partial<Panel> => ({
-  ['panel.background']: colors.grayColors300,
+  ['panel.background']: colors.grayColors200,
   ['panel.border']: colors.grayColors500,
   ['panel.dropBorder']: ''
 })

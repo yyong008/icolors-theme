@@ -19,8 +19,8 @@ const classScopes: RawAtomTheme[] = [
     name: '(c|m)(j|t)s(x)::className',
     scope: [],
     rawScope: ['entity.name.type.class'],
-    foreground: mapColorsWithRuntimeWeightFn('600'),
-    fontStyle: ''
+    foreground: mapColorsWithRuntimeWeightFn('700'),
+    fontStyle: 'bold'
   },
   {
     name: '(c|m)(j|t)s(x)::thisKeyword',

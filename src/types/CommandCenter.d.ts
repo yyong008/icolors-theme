@@ -4,4 +4,6 @@ export default interface CommandCenter {
   'commandCenter.background': string
   'commandCenter.activeBackground': string
   'commandCenter.border': string
+  'commandCenter.inactiveForeground': string
+  'commandCenter.inactiveBorder': string
 }

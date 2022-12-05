@@ -13,7 +13,7 @@ const stringScopes: RawAtomTheme[] = [
       'string.quoted.signle',
       'string.quoted.single.char'
     ],
-    foreground: colors.grayColors100,
+    foreground: colors.grayColors1200,
     fontStyle: 'italic'
   }
 ]

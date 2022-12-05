@@ -12,7 +12,7 @@ const stringScopes: RawAtomTheme[] = [
       'string.quoted.single.basic.line',
       'string.quoted.double.basic.line'
     ],
-    foreground: mapColors('grayColors200'),
+    foreground: mapColors('grayColors500'),
     fontStyle: 'italic'
   }
 ]

@@ -1,13 +1,15 @@
-import CommandCenter from 'src/types/CommandCenter'
+import type CommandCenter from 'src/types/CommandCenter'
 
-import colors, { mapColorsWithRuntimeWeight } from '../designs/index.js'
+import colors, { mapColorsWithRuntimeWeight } from '../designs/index'
 
 const commandCenterColors = (): Partial<CommandCenter> => ({
-  ['commandCenter.foreground']: mapColorsWithRuntimeWeight('100'),
-  ['commandCenter.activeForeground']: mapColorsWithRuntimeWeight('500'),
-  ['commandCenter.background']: colors.grayColors300,
-  ['commandCenter.activeBackground']: '',
-  ['commandCenter.border']: mapColorsWithRuntimeWeight('400')
+  ['commandCenter.foreground']: mapColorsWithRuntimeWeight('600'),
+  ['commandCenter.activeForeground']: mapColorsWithRuntimeWeight('800'),
+  ['commandCenter.background']: mapColorsWithRuntimeWeight('100'),
+  ['commandCenter.activeBackground']: colors.grayColors300,
+  ['commandCenter.border']: mapColorsWithRuntimeWeight('500'),
+  ['commandCenter.inactiveForeground']: mapColorsWithRuntimeWeight('600'),
+  ['commandCenter.inactiveBorder']: mapColorsWithRuntimeWeight('500')
 })
 
 export default {

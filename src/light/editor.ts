@@ -28,7 +28,7 @@ const editor = (): Partial<Editor> => ({
 // TODO: type
 const editorLineHight = () => ({
   ['editor.lineHighlightBackground']: mapColorsWithRuntimeWeight('100'),
-  ['editor.lineHighlightBorder']: mapColorsWithRuntimeWeight('300')
+  ['editor.lineHighlightBorder']: mapColorsWithRuntimeWeight('200')
 })
 
 const editorCursor = (): Partial<EditorCursor> => ({
@@ -67,8 +67,8 @@ const editorHoverWidget = (): Partial<EditorHoverWidget> => ({
 })
 
 const editorSuggestWidget = (): Partial<EditorSuggestWidget> => ({
-  ['editorSuggestWidget.background']: '#272822',
-  ['editorSuggestWidget.border']: '#75715E'
+  ['editorSuggestWidget.background']: colors.grayColors100,
+  ['editorSuggestWidget.border']: mapColorsWithRuntimeWeight('200')
 })
 
 const editorLineNumber = (): Partial<EditorLineNumber> => ({

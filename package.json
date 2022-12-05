@@ -135,7 +135,10 @@
     ]
   },
   "scripts": {
-    "dev": "esno src/index.ts ",
+    "dev": "npm run dev:build && npm run dev:install",
+    "dev:build:json": "esno src/index.ts",
+    "dev:build:vsce": "rm -rf ./i-colors-0.0.1.vsix && vsce package --yarn",
+    "dev:install": "code --install-extension ./i-colors-0.0.1.vsix",
     "lint": "eslint --ext .ts,.js,.tsx,.jsx .",
     "lint:fix": "eslint --ext .ts,.js,.tsx,.jsx . --fix",
     "stylelint": "stylelint ./src/**/*.{css,less,scss,sass}",
@@ -154,7 +157,12 @@
     "typescript"
   ],
   "author": "mg",
+  "publisher": "magnesium-007",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yyong008/mg-iColors"
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",

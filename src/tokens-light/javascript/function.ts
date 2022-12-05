@@ -23,7 +23,7 @@ const functionScopes: RawAtomTheme[] = [
     name: '(c|m)(j|t)s(x)::functionParams',
     scope: [],
     rawScope: ['variable.parameter'],
-    foreground: mapColorsWithRuntimeWeightFn('400'),
+    foreground: colors.grayColors900,
     fontStyle: ''
   },
   {

@@ -8,8 +8,8 @@ const menu = (): Partial<Menu> => ({
   ['menu.selectionForeground']: colors.grayColors100,
   ['menu.selectionBackground']: mapColorsWithRuntimeWeight('900'),
   ['menu.selectionBorder']: '',
-  ['menu.separatorBackground']: '',
-  ['menu.border']: mapColorsWithRuntimeWeight('700')
+  ['menu.separatorBackground']: mapColorsWithRuntimeWeight('300'),
+  ['menu.border']: colors.grayColors300
 })
 
 const menuBar = (): Partial<MenuBar> => ({

@@ -32,7 +32,8 @@ const operatorScopes: RawAtomTheme[] = [
       'keyword.generator.asterisk',
       'keyword.control.as',
       'keyword.control.switch',
-      'keyword.control.trycatch'
+      'keyword.control.trycatch',
+      'keyword.control.type'
     ],
     foreground: colors.magentaColors600,
     fontStyle: 'bold'
