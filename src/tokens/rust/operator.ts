@@ -1,6 +1,6 @@
 import type { RawAtomTheme } from '../common'
 
-import { mapColorsWithRuntimeWeightFn } from '../../designs/index'
+import { mapColorsReverseWithRuntimeWeightFn } from '../../designs/index'
 import { gnAtomThemeFns } from '../common'
 import { rustTypes } from '../constants'
 
@@ -32,9 +32,11 @@ const operatorScopes: RawAtomTheme[] = [
       'keyword.generator.asterisk',
       'keyword.control.as',
       'keyword.control.switch',
-      'keyword.operator.borrow.and'
+      'keyword.operator.borrow.and',
+      'keyword.operator.assignment.equal',
+      'keyword.operator.arrow.skinny'
     ],
-    foreground: mapColorsWithRuntimeWeightFn('500'),
+    foreground: mapColorsReverseWithRuntimeWeightFn('500'),
     fontStyle: 'bold'
   }
 ]

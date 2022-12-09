@@ -1,7 +1,5 @@
 import type GitDecoration from '../types/Git'
 
-import colors from '../designs/index'
-
 const gitDecoration = (): Partial<GitDecoration> => ({
   ['gitDecoration.addedResourceForeground']: '#81b88b',
   ['gitDecoration.modifiedResourceForeground']: '#E2C08D',

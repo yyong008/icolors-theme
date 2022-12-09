@@ -9,7 +9,7 @@ const functionScopes: RawAtomTheme[] = [
     name: '(c|m)(j|t)s(x)::functionKeyword',
     scope: [],
     rawScope: ['storage.type.function'],
-    foreground: colors.grayColors1300,
+    foreground: colors.purpleColors400,
     fontStyle: 'bold'
   },
   {

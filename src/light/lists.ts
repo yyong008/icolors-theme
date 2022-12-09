@@ -1,4 +1,4 @@
-import type { List } from '../types/List'
+import type { List, ListFilterWidget } from '../types/List'
 
 import colors, { mapColorsWithRuntimeWeight } from '../designs/index'
 
@@ -28,4 +28,11 @@ const list = (): Partial<List> => ({
   'list.deemphasizedForeground': ''
 })
 
-export default { list }
+const listFilter = (): Partial<ListFilterWidget> => ({
+  'listFilterWidget.background': '',
+  'listFilterWidget.outline': '',
+  'listFilterWidget.noMatchesOutline': '',
+  'listFilterWidget.shadow': ''
+})
+
+export default { list, listFilter }

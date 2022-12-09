@@ -9,7 +9,7 @@ const loopScopes: RawAtomTheme[] = [
     name: '(c|m)(j|t)s(x)::label',
     scope: [],
     rawScope: ['keyword.control.loop', 'keyword.operator.expression.of'],
-    foreground: colors.purpleColors400,
+    foreground: colors.purpleColors600,
     fontStyle: ''
   }
 ]

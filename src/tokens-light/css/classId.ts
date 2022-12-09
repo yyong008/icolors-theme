@@ -11,10 +11,11 @@ const tagClassIdScopes: RawAtomTheme[] = [
     rawScope: [
       'entity.name.tag',
       'entity.other.attribute-name.id',
-      'entity.other.attribute-name.class'
+      'entity.other.attribute-name.class',
+      'entity.name.tag.wildcard'
     ],
-    foreground: mapColorsWithRuntimeWeightFn('400'),
-    fontStyle: 'bold italic'
+    foreground: mapColorsWithRuntimeWeightFn('800'),
+    fontStyle: 'bold'
   }
 ]
 

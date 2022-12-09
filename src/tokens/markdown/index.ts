@@ -5,6 +5,7 @@ import bold from './bold'
 import link from './link'
 import punctuation from './punctuation'
 import yaml from './yaml.js'
+import paragraph from './paragraph'
 
 export default function markdownLanguage() {
   return [
@@ -14,6 +15,7 @@ export default function markdownLanguage() {
     ...bold,
     ...link,
     ...punctuation,
-    ...yaml
+    ...yaml,
+    ...paragraph
   ]
 }

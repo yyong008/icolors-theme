@@ -1,4 +1,4 @@
-import type Editor from '../types/Editor.js'
+import type Editor from '../types/Editor'
 import type {
   EditorCursor,
   EditorWhitespace,
@@ -11,18 +11,17 @@ import type {
   EditorLineNumber,
   EditorDebug,
   EditorCommentsWidget
-} from '../types/Editor.js'
+} from '../types/Editor'
 
-import colors, { mapColorsWithRuntimeWeight } from '../designs/index.js'
+import colors, { mapColorsWithRuntimeWeight } from '../designs/index'
 
 const editor = (): Partial<Editor> => ({
   ['editor.background']: colors.grayColors300,
   ['editor.foreground']: mapColorsWithRuntimeWeight('400'),
   ['editor.selectionHighlightBackground']: mapColorsWithRuntimeWeight('200'),
-  ['editor.selectionBackground']: '#878b9180',
-  ['editor.wordHighlightBackground']: '#4a4a7680',
-  ['editor.wordHighlightStrongBackground']: '#6a6a9680'
-  // ['editor.lineHighlightBackground']: '#3e3d3290'
+  ['editor.selectionBackground']: '',
+  ['editor.wordHighlightBackground']: '',
+  ['editor.wordHighlightStrongBackground']: ''
 })
 
 // TODO: type
@@ -32,22 +31,22 @@ const editorLineHight = () => ({
 })
 
 const editorCursor = (): Partial<EditorCursor> => ({
-  ['editorCursor.foreground']: '',
-  ['editorCursor.background']: ''
+  ['editorCursor.foreground']: mapColorsWithRuntimeWeight('600'),
+  ['editorCursor.background']: colors.grayColors300
 })
 
 const editorWhitespace = (): Partial<EditorWhitespace> => ({
-  ['editorWhitespace.foreground']: '#464741'
+  ['editorWhitespace.foreground']: ''
 })
 
 const editorIndentGuide = (): Partial<EditorIndentGuide> => ({
-  ['editorIndentGuide.background']: '#464741',
-  ['editorIndentGuide.activeBackground']: '#767771'
+  ['editorIndentGuide.background']: '',
+  ['editorIndentGuide.activeBackground']: ''
 })
 
 const editorGroupColors = (): Partial<EditorGroup> => ({
   ['editorGroup.border']: mapColorsWithRuntimeWeight('400'),
-  ['editorGroup.dropBackground']: '#41433980'
+  ['editorGroup.dropBackground']: ''
 })
 
 const editorGroupHeaderColors = (): Partial<EditorGroupHeader> => ({

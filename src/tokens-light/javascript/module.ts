@@ -15,7 +15,7 @@ const moduleScopes: RawAtomTheme[] = [
       'keyword.control.default'
     ],
     foreground: colors.grayColors1300,
-    fontStyle: ''
+    fontStyle: 'italic'
   },
   {
     name: '(c|m)(j|t)s(x)::module::import-content',

@@ -1,8 +1,8 @@
 {
   "name": "i-colors",
   "displayName": "iColors",
-  "version": "0.0.1",
-  "description": "a vscode theme with level color system",
+  "version": "0.0.12",
+  "description": "A VS Ccode theme with level color system",
   "type": "module",
   "engines": {
     "vscode": "^1.72.0"
@@ -137,8 +137,9 @@
   "scripts": {
     "dev": "npm run dev:build && npm run dev:install",
     "dev:build:json": "esno src/index.ts",
-    "dev:build:vsce": "rm -rf ./i-colors-0.0.1.vsix && vsce package --yarn",
+    "dev:build:vsce": "rm -rf ./*.vsix && vsce package --yarn",
     "dev:install": "code --install-extension ./i-colors-0.0.1.vsix",
+    "publish": "vsce publish",
     "lint": "eslint --ext .ts,.js,.tsx,.jsx .",
     "lint:fix": "eslint --ext .ts,.js,.tsx,.jsx . --fix",
     "stylelint": "stylelint ./src/**/*.{css,less,scss,sass}",

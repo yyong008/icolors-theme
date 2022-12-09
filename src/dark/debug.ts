@@ -10,7 +10,7 @@ import type {
 import colors from '../designs/index'
 
 const debugToolBar = (): Partial<DebugToolBar> => ({
-  ['debugToolBar.background']: colors.redColors400,
+  ['debugToolBar.background']: colors.grayColors100,
   ['debugToolBar.border']: ''
 })
 

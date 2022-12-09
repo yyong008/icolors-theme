@@ -1,6 +1,6 @@
 import type { RawAtomTheme } from '../common'
 
-import colors from '../../designs/index'
+import colors, { mapColorsWithRuntimeWeightFn } from '../../designs/index'
 import { gnAtomThemeFns } from '../common'
 import { jsTypes } from '../constants'
 
@@ -16,7 +16,7 @@ const functionScopes: RawAtomTheme[] = [
     name: '(c|m)(j|t)s(x)::functionName',
     scope: [],
     rawScope: ['entity.name.function'],
-    foreground: colors.cyanColors700,
+    foreground: mapColorsWithRuntimeWeightFn('700'),
     fontStyle: ''
   },
   {
@@ -30,14 +30,14 @@ const functionScopes: RawAtomTheme[] = [
     name: '(c|m)(j|t)s(x)::arrowFunction',
     scope: [],
     rawScope: ['storage.type.function.arrow'],
-    foreground: colors.cyanColors700,
+    foreground: mapColorsWithRuntimeWeightFn('700'),
     fontStyle: ''
   },
   {
     name: '(c|m)(j|t)s(x)::functionCall',
     scope: [],
     rawScope: ['meta.function-call'],
-    foreground: colors.cyanColors700,
+    foreground: mapColorsWithRuntimeWeightFn('700'),
     fontStyle: ''
   }
 ]

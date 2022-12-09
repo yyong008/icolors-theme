@@ -10,7 +10,7 @@ const commentScopes: RawAtomTheme[] = [
     scope: [],
     rawScope: ['comment.block', 'comment.line.double-slash'],
     foreground: colors.grayColors700,
-    fontStyle: ''
+    fontStyle: 'italic'
   }
 ]
 

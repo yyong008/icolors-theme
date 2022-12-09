@@ -1,6 +1,6 @@
 import type { RawAtomTheme } from '../common'
 
-import { mapColorsWithRuntimeWeightFn } from '../../designs/index'
+import { mapColorsReverseWithRuntimeWeightFn } from '../../designs/index'
 import { gnAtomThemeFns } from '../common'
 import { rustTypes } from '../constants'
 
@@ -12,7 +12,7 @@ const structScopes: RawAtomTheme[] = [
       // impl keyword
       'keyword.other'
     ],
-    foreground: mapColorsWithRuntimeWeightFn('500'),
+    foreground: mapColorsReverseWithRuntimeWeightFn('500'),
     fontStyle: 'bold'
   }
 ]

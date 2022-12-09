@@ -1,6 +1,9 @@
 import type { RawAtomTheme } from '../common.js'
 
-import { mapColorsWithRuntimeWeightFn } from '../../designs/index.js'
+import {
+  mapColorsWithRuntimeWeightFn,
+  mapColorsReverseWithRuntimeWeight
+} from '../../designs/index.js'
 import { gnAtomThemeFns } from '../common.js'
 import { styleTypes } from '../constants.js'
 
@@ -22,7 +25,7 @@ const atRuleScopes: RawAtomTheme[] = [
       'keyword.control.at-rule.counter-style',
       'meta.at-rule.header'
     ],
-    foreground: mapColorsWithRuntimeWeightFn('700'),
+    foreground: mapColorsWithRuntimeWeightFn('1000'),
     fontStyle: 'bold'
   },
   {

@@ -1,6 +1,9 @@
 import type { RawAtomTheme } from '../common'
 
-import { mapColorsWithRuntimeWeightFn } from '../../designs/index'
+import {
+  mapColorsWithRuntimeWeightFn,
+  mapColorsReverseWithRuntimeWeightFn
+} from '../../designs/index'
 import { gnAtomThemeFns } from '../common'
 import { jsxTypes } from '../constants'
 
@@ -34,8 +37,22 @@ const xScopes: RawAtomTheme[] = [
     name: '(j|t)sx::punctuation',
     scope: [],
     rawScope: ['keyword.control.type'],
-    foreground: mapColorsWithRuntimeWeightFn('800'),
+    foreground: mapColorsReverseWithRuntimeWeightFn('800'),
     fontStyle: ''
+  },
+  {
+    name: '(j|t)sx::tag',
+    scope: [],
+    rawScope: ['entity.name.tag', 'entity.name.tag.js'],
+    foreground: mapColorsWithRuntimeWeightFn('700'),
+    fontStyle: 'bold'
+  },
+  {
+    name: '(j|t)sx::tag::attribute',
+    scope: [],
+    rawScope: ['entity.other.attribute-name', 'entity.other.attribute-name.js'],
+    foreground: mapColorsReverseWithRuntimeWeightFn('800'),
+    fontStyle: 'bold'
   }
 ]
 

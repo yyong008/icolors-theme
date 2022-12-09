@@ -1,6 +1,6 @@
 import type { RawAtomTheme } from '../common'
 
-import colors, { mapColorsWithRuntimeWeightFn } from '../../designs/index'
+import { mapColorsWithRuntimeWeightFn } from '../../designs/index'
 import { gnAtomThemeFns } from '../common'
 import { jsTypes } from '../constants'
 
@@ -9,7 +9,7 @@ const enumScopes: RawAtomTheme[] = [
     name: '(c|m)ts(x)::enum',
     scope: [],
     rawScope: ['storage.type.enum'],
-    foreground: colors.purpleColors300,
+    foreground: mapColorsWithRuntimeWeightFn('400'),
     fontStyle: ''
   },
   {

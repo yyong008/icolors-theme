@@ -1,5 +1,6 @@
-import comment from './comment.js'
+import comment from './comment'
+import keyValue from './key-value'
 
 export default function rustLanuage() {
-  return [...comment]
+  return [...keyValue, ...comment]
 }

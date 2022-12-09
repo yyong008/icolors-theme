@@ -1,6 +1,6 @@
 import type { RawAtomTheme } from '../common.js'
 
-import { mapColorsWithRuntimeWeightFn } from '../../designs/index.js'
+import { mapColorsReverseWithRuntimeWeightFn } from '../../designs/index.js'
 import { gnAtomThemeFns } from '../common.js'
 import { styleTypes } from '../constants.js'
 
@@ -14,7 +14,7 @@ const operatorScopes: RawAtomTheme[] = [
       'keyword.other.important',
       'keyword.operator.combinator'
     ],
-    foreground: mapColorsWithRuntimeWeightFn('800'),
+    foreground: mapColorsReverseWithRuntimeWeightFn('800'),
     fontStyle: ''
   }
 ]

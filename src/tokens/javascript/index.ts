@@ -19,6 +19,7 @@ import tsEnum from './enum'
 import tsInterface from './interface'
 import tsX from './x'
 import tsTypes from './type-system'
+import docScopes from './doc'
 
 export default function jsLanguage() {
   return [
@@ -41,6 +42,7 @@ export default function jsLanguage() {
     ...tsEnum,
     ...tsInterface,
     ...tsX,
-    ...tsTypes
+    ...tsTypes,
+    ...docScopes
   ]
 }

@@ -1,6 +1,6 @@
 import type { RawAtomTheme } from '../common'
 
-import { mapColorsWithRuntimeWeightFn } from '../../designs/index'
+import colors, { mapColorsWithRuntimeWeightFn } from '../../designs/index'
 import { gnAtomThemeFns } from '../common'
 import { jsTypes } from '../constants'
 
@@ -9,7 +9,7 @@ const interfaceScopes: RawAtomTheme[] = [
     name: '(c|m)ts(x)::interface',
     scope: [],
     rawScope: ['storage.type.interface'],
-    foreground: mapColorsWithRuntimeWeightFn('600'),
+    foreground: colors.purpleColors400,
     fontStyle: ''
   },
   {

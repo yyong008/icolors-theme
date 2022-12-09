@@ -8,9 +8,9 @@ const editorconfigScopes: RawAtomTheme[] = [
   {
     name: 'editorconfig::comment',
     scope: [],
-    rawScope: ['comment.line.number-sign.editorconfig'],
-    foreground: colors.grayColors800,
-    fontStyle: ''
+    rawScope: ['comment.line.number-sign', 'punctuation.definition.comment'],
+    foreground: colors.grayColors700,
+    fontStyle: 'italic'
   }
 ]
 

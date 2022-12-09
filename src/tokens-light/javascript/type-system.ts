@@ -1,6 +1,6 @@
 import type { RawAtomTheme } from '../common.js'
 
-import { mapColorsWithRuntimeWeightFn } from '../../designs/index.js'
+import colors, { mapColorsWithRuntimeWeightFn } from '../../designs/index.js'
 import { gnAtomThemeFns } from '../common.js'
 import { jsTypes } from '../constants.js'
 
@@ -31,7 +31,7 @@ const typeSystemScopes: RawAtomTheme[] = [
       'storage.type.interface',
       'storage.type.namespace'
     ],
-    foreground: mapColorsWithRuntimeWeightFn('700'),
+    foreground: colors.magentaColors600,
     fontStyle: ''
   },
   {

@@ -9,7 +9,7 @@ const stringScopes: RawAtomTheme[] = [
     name: '(c|m)(j|t)s(x)::string::template',
     scope: [],
     rawScope: ['string.template'],
-    foreground: colors.grayColors200,
+    foreground: colors.grayColors1000,
     fontStyle: ''
   }
 ]

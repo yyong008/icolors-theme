@@ -1,6 +1,6 @@
 import type { RawAtomTheme } from '../common'
 
-import colors, { mapColorsWithRuntimeWeight } from '../../designs/index'
+import colors from '../../designs/index'
 import { gnAtomThemeFns } from '../common'
 import { jsTypes } from '../constants'
 
@@ -9,7 +9,7 @@ const punctuationScopes: RawAtomTheme[] = [
     name: '(c|m)(j|t)s(x)::comment',
     scope: [],
     rawScope: ['punctuation.definition.comment'],
-    foreground: colors.grayColors1000,
+    foreground: colors.grayColors600,
     fontStyle: ''
   },
   {
@@ -19,14 +19,17 @@ const punctuationScopes: RawAtomTheme[] = [
       'punctuation.definition.string.template.begin',
       'punctuation.definition.string.template.end'
     ],
-    foreground: colors.grayColors1000,
+    foreground: colors.grayColors800,
     fontStyle: ''
   },
   {
     name: '(c|m)(j|t)s(x)::comma',
     scope: [],
-    rawScope: ['punctuation.separator.comma'],
-    foreground: mapColorsWithRuntimeWeight('400'),
+    rawScope: [
+      'punctuation.separator.comma',
+      'punctuation.terminator.statement'
+    ],
+    foreground: colors.grayColors300,
     fontStyle: ''
   }
 ]

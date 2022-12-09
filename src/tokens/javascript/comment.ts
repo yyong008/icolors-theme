@@ -14,7 +14,7 @@ const commentScopes: RawAtomTheme[] = [
       'comment.block.documentation',
       'comment.line.shebang'
     ],
-    foreground: colors.grayColors900,
+    foreground: colors.grayColors800,
     fontStyle: 'italic'
   }
 ]

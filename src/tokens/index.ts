@@ -11,6 +11,7 @@ import rust from './rust/index'
 import toml from './toml/index'
 import editorconfig from './editorconfig/index'
 import shell from './shell/index'
+import ignore from './ignore/index'
 
 export default function createColorTokens() {
   return [
@@ -26,6 +27,7 @@ export default function createColorTokens() {
     ...rust(),
     ...toml(),
     ...editorconfig(),
-    ...shell()
+    ...shell(),
+    ...ignore()
   ].map((f) => f())
 }

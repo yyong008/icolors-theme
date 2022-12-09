@@ -11,6 +11,8 @@ import escape from './escape'
 import operator from './operator'
 import typeSystem from './type-system'
 import macro from './macro'
+import life from './life'
+import loop from './loop'
 
 export default function rustLanuage() {
   return [
@@ -26,6 +28,8 @@ export default function rustLanuage() {
     ...escape,
     ...operator,
     ...typeSystem,
-    ...macro
+    ...macro,
+    ...life,
+    ...loop
   ]
 }
