@@ -1,6 +1,9 @@
 import type { RawAtomTheme } from '../common'
 
-import colors, { mapColorsWithRuntimeWeightFn } from '../../designs/index'
+import colors, {
+  mapColorsWithRuntimeWeightFn,
+  mapColorsReverseWithRuntimeWeightFn
+} from '../../designs/index'
 import { gnAtomThemeFns } from '../common'
 import { jsTypes } from '../constants'
 
@@ -35,7 +38,14 @@ const moduleScopes: RawAtomTheme[] = [
     name: '(c|m)(j|t)s(x)::module::dynamic::import',
     scope: ['keyword.operator.expression.import'],
     rawScope: ['meta.import'],
-    foreground: mapColorsWithRuntimeWeightFn('800'),
+    foreground: mapColorsReverseWithRuntimeWeightFn('800'),
+    fontStyle: ''
+  },
+  {
+    name: 'import type',
+    scope: [],
+    rawScope: ['keyword.control.type'],
+    foreground: mapColorsReverseWithRuntimeWeightFn('800'),
     fontStyle: ''
   }
 ]

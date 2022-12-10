@@ -162,7 +162,6 @@
     "tab.inactiveBackground": "#f5f5f5",
     "tab.inactiveForeground": "#1f1f1f",
     "tab.activeForeground": "#1f1f1f",
-    "tab.lastPinnedBorder": "#5c0011",
     "tab.activeBorder": "#ff9c6e",
     "terminal.ansiBlack": "#333333",
     "terminal.ansiRed": "#C4265E",
@@ -637,7 +636,6 @@
         "keyword.control.as.js",
         "keyword.control.switch.js",
         "keyword.control.trycatch.js",
-        "keyword.control.type.js",
         "keyword.operator.optional.js",
         "keyword.operator.assignment.mjs",
         "keyword.operator.comparison.mjs",
@@ -663,7 +661,6 @@
         "keyword.control.as.mjs",
         "keyword.control.switch.mjs",
         "keyword.control.trycatch.mjs",
-        "keyword.control.type.mjs",
         "keyword.operator.optional.mjs",
         "keyword.operator.assignment.cjs",
         "keyword.operator.comparison.cjs",
@@ -689,7 +686,6 @@
         "keyword.control.as.cjs",
         "keyword.control.switch.cjs",
         "keyword.control.trycatch.cjs",
-        "keyword.control.type.cjs",
         "keyword.operator.optional.cjs",
         "keyword.operator.assignment.jsx",
         "keyword.operator.comparison.jsx",
@@ -715,7 +711,6 @@
         "keyword.control.as.jsx",
         "keyword.control.switch.jsx",
         "keyword.control.trycatch.jsx",
-        "keyword.control.type.jsx",
         "keyword.operator.optional.jsx",
         "keyword.operator.assignment.ts",
         "keyword.operator.comparison.ts",
@@ -741,7 +736,6 @@
         "keyword.control.as.ts",
         "keyword.control.switch.ts",
         "keyword.control.trycatch.ts",
-        "keyword.control.type.ts",
         "keyword.operator.optional.ts",
         "keyword.operator.assignment.mts",
         "keyword.operator.comparison.mts",
@@ -767,7 +761,6 @@
         "keyword.control.as.mts",
         "keyword.control.switch.mts",
         "keyword.control.trycatch.mts",
-        "keyword.control.type.mts",
         "keyword.operator.optional.mts",
         "keyword.operator.assignment.cts",
         "keyword.operator.comparison.cts",
@@ -793,7 +786,6 @@
         "keyword.control.as.cts",
         "keyword.control.switch.cts",
         "keyword.control.trycatch.cts",
-        "keyword.control.type.cts",
         "keyword.operator.optional.cts",
         "keyword.operator.assignment.tsx",
         "keyword.operator.comparison.tsx",
@@ -819,7 +811,6 @@
         "keyword.control.as.tsx",
         "keyword.control.switch.tsx",
         "keyword.control.trycatch.tsx",
-        "keyword.control.type.tsx",
         "keyword.operator.optional.tsx"
       ],
       "settings": {
@@ -1237,13 +1228,13 @@
       }
     },
     {
-      "name": "(j|t)sx::punctuation",
+      "name": "import type",
       "scope": [
         "keyword.control.type.jsx",
         "keyword.control.type.tsx"
       ],
       "settings": {
-        "foreground": "#ad2102",
+        "foreground": "#10239e",
         "fontStyle": ""
       }
     },

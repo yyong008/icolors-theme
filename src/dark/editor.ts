@@ -44,7 +44,10 @@ const editorGroupColors = (): Partial<EditorGroup> => ({
 })
 
 const editorGroupHeaderColors = (): Partial<EditorGroupHeader> => ({
-  ['editorGroupHeader.tabsBackground']: '#1e1f1c'
+  ['editorGroupHeader.tabsBackground']: colors.grayColors1200,
+  ['editorGroupHeader.noTabsBackground']: '',
+  ['editorGroupHeader.tabsBorder']: colors.grayColors900,
+  ['editorGroupHeader.border']: ''
 })
 
 const editorWidget = (): Partial<EditorWidget> => ({

@@ -20,6 +20,7 @@ import tsInterface from './interface'
 import tsX from './x'
 import tsTypes from './type-system'
 import docScopes from './doc'
+import regexp from './regexp'
 
 export default function jsLanguage() {
   return [
@@ -43,6 +44,7 @@ export default function jsLanguage() {
     ...tsInterface,
     ...tsX,
     ...tsTypes,
-    ...docScopes
+    ...docScopes,
+    ...regexp
   ]
 }

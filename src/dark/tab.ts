@@ -1,23 +1,26 @@
 import type Tab from '../types/Tab'
 
-import colors, { mapColorsWithRuntimeWeight } from '../designs/index'
+import colors, {
+  mapColorsWithRuntimeWeight,
+  mapColorsReverseWithRuntimeWeightAlpha
+} from '../designs/index'
 
 const tab = (): Partial<Tab> => ({
-  ['tab.activeBackground']: colors.grayColors900,
+  ['tab.activeBackground']: mapColorsReverseWithRuntimeWeightAlpha('100', '00'),
   ['tab.unfocusedActiveBackground']: '',
   ['tab.inactiveBackground']: colors.grayColors1000,
   ['tab.border']: '',
   ['tab.inactiveForeground']: colors.grayColors600,
   ['tab.activeForeground']: colors.grayColors100,
-  ['tab.lastPinnedBorder']: colors.grayColors900,
-  ['tab.activeBorder']: mapColorsWithRuntimeWeight('200'),
-  ['tab.unfocusedActiveBorder']: colors.grayColors900,
+  ['tab.lastPinnedBorder']: '',
+  ['tab.activeBorder']: mapColorsWithRuntimeWeight('700'),
+  ['tab.unfocusedActiveBorder']: '',
   ['tab.activeBorderTop']: '',
-  ['tab.unfocusedActiveBorderTop']: colors.grayColors900,
+  ['tab.unfocusedActiveBorderTop']: '',
   ['tab.unfocusedInactiveBackground']: '',
   ['tab.unfocusedActiveForeground']: '',
   ['tab.unfocusedInactiveForeground']: '',
-  ['tab.hoverBackground']: colors.grayColors1000,
+  ['tab.hoverBackground']: '',
   ['tab.unfocusedHoverBackground']: '',
   ['tab.hoverForeground']: '',
   ['tab.unfocusedHoverForeground']: '',

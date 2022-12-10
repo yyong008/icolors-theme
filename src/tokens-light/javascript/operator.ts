@@ -33,7 +33,6 @@ const operatorScopes: RawAtomTheme[] = [
       'keyword.control.as',
       'keyword.control.switch',
       'keyword.control.trycatch',
-      'keyword.control.type',
       'keyword.operator.optional'
     ],
     foreground: colors.magentaColors600,

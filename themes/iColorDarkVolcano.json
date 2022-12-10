@@ -55,7 +55,8 @@
     "editorIndentGuide.activeBackground": "#767771",
     "editorGroup.border": "#ff9c6e",
     "editorGroup.dropBackground": "#41433980",
-    "editorGroupHeader.tabsBackground": "#1e1f1c",
+    "editorGroupHeader.tabsBackground": "#141414",
+    "editorGroupHeader.tabsBorder": "#434343",
     "editorWidget.background": "#1f1f1f",
     "editorHoverWidget.background": "#262626",
     "editorHoverWidget.border": "#75715E",
@@ -124,12 +125,12 @@
     "selection.background": "#878b9180",
     "settings.headerForeground": "#fa541c",
     "settings.modifiedItemIndicator": "#597ef7",
-    "settings.dropdownBackground": "#610b00",
+    "settings.dropdownBackground": "#434343",
     "settings.dropdownForeground": "#ffffff",
     "settings.checkboxBackground": "#141414",
     "settings.checkboxForeground": "#ff7a45",
-    "settings.textInputBackground": "#610b00",
-    "settings.numberInputBackground": "#610b00",
+    "settings.textInputBackground": "#434343",
+    "settings.numberInputBackground": "#434343",
     "settings.numberInputForeground": "#ffffff",
     "settings.focusedRowBackground": "#10239e",
     "settings.focusedRowBorder": "#adc6ff",
@@ -154,15 +155,11 @@
     "statusBarItem.warningForeground": "#ffffff",
     "statusBarItem.compactHoverBackground": "#08979c",
     "statusBarItem.focusBorder": "#ffffff",
-    "tab.activeBackground": "#434343",
+    "tab.activeBackground": "#f0f5ff00",
     "tab.inactiveBackground": "#262626",
     "tab.inactiveForeground": "#bfbfbf",
     "tab.activeForeground": "#ffffff",
-    "tab.lastPinnedBorder": "#434343",
-    "tab.activeBorder": "#ffd8bf",
-    "tab.unfocusedActiveBorder": "#434343",
-    "tab.unfocusedActiveBorderTop": "#434343",
-    "tab.hoverBackground": "#262626",
+    "tab.activeBorder": "#d4380d",
     "terminal.ansiBlack": "#333333",
     "terminal.ansiRed": "#C4265E",
     "terminal.ansiGreen": "#86B42B",
@@ -286,7 +283,24 @@
         "meta.import.tsx"
       ],
       "settings": {
-        "foreground": "#ad2102",
+        "foreground": "#10239e",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "import type",
+      "scope": [
+        "keyword.control.type.js",
+        "keyword.control.type.mjs",
+        "keyword.control.type.cjs",
+        "keyword.control.type.jsx",
+        "keyword.control.type.ts",
+        "keyword.control.type.mts",
+        "keyword.control.type.cts",
+        "keyword.control.type.tsx"
+      ],
+      "settings": {
+        "foreground": "#10239e",
         "fontStyle": ""
       }
     },
@@ -362,8 +376,8 @@
         "entity.name.function.tsx"
       ],
       "settings": {
-        "foreground": "#d4380d",
-        "fontStyle": ""
+        "foreground": "#ad2102",
+        "fontStyle": "bold"
       }
     },
     {
@@ -635,6 +649,8 @@
         "keyword.generator.asterisk.js",
         "keyword.control.as.js",
         "keyword.control.switch.js",
+        "keyword.operator.optional.js",
+        "keyword.control.trycatch.js",
         "keyword.operator.assignment.mjs",
         "keyword.operator.comparison.mjs",
         "keyword.operator.logical.mjs",
@@ -658,6 +674,8 @@
         "keyword.generator.asterisk.mjs",
         "keyword.control.as.mjs",
         "keyword.control.switch.mjs",
+        "keyword.operator.optional.mjs",
+        "keyword.control.trycatch.mjs",
         "keyword.operator.assignment.cjs",
         "keyword.operator.comparison.cjs",
         "keyword.operator.logical.cjs",
@@ -681,6 +699,8 @@
         "keyword.generator.asterisk.cjs",
         "keyword.control.as.cjs",
         "keyword.control.switch.cjs",
+        "keyword.operator.optional.cjs",
+        "keyword.control.trycatch.cjs",
         "keyword.operator.assignment.jsx",
         "keyword.operator.comparison.jsx",
         "keyword.operator.logical.jsx",
@@ -704,6 +724,8 @@
         "keyword.generator.asterisk.jsx",
         "keyword.control.as.jsx",
         "keyword.control.switch.jsx",
+        "keyword.operator.optional.jsx",
+        "keyword.control.trycatch.jsx",
         "keyword.operator.assignment.ts",
         "keyword.operator.comparison.ts",
         "keyword.operator.logical.ts",
@@ -727,6 +749,8 @@
         "keyword.generator.asterisk.ts",
         "keyword.control.as.ts",
         "keyword.control.switch.ts",
+        "keyword.operator.optional.ts",
+        "keyword.control.trycatch.ts",
         "keyword.operator.assignment.mts",
         "keyword.operator.comparison.mts",
         "keyword.operator.logical.mts",
@@ -750,6 +774,8 @@
         "keyword.generator.asterisk.mts",
         "keyword.control.as.mts",
         "keyword.control.switch.mts",
+        "keyword.operator.optional.mts",
+        "keyword.control.trycatch.mts",
         "keyword.operator.assignment.cts",
         "keyword.operator.comparison.cts",
         "keyword.operator.logical.cts",
@@ -773,6 +799,8 @@
         "keyword.generator.asterisk.cts",
         "keyword.control.as.cts",
         "keyword.control.switch.cts",
+        "keyword.operator.optional.cts",
+        "keyword.control.trycatch.cts",
         "keyword.operator.assignment.tsx",
         "keyword.operator.comparison.tsx",
         "keyword.operator.logical.tsx",
@@ -795,7 +823,9 @@
         "punctuation.accessor.optional.tsx",
         "keyword.generator.asterisk.tsx",
         "keyword.control.as.tsx",
-        "keyword.control.switch.tsx"
+        "keyword.control.switch.tsx",
+        "keyword.operator.optional.tsx",
+        "keyword.control.trycatch.tsx"
       ],
       "settings": {
         "foreground": "#eb2f96",
@@ -874,7 +904,32 @@
         "string.template.tsx"
       ],
       "settings": {
-        "foreground": "#fa541c",
+        "foreground": "#ffbb96",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "(c|m)(j|t)s(x)::string::template::$",
+      "scope": [
+        "punctuation.definition.template-expression.begin.js",
+        "punctuation.definition.template-expression.end.js",
+        "punctuation.definition.template-expression.begin.mjs",
+        "punctuation.definition.template-expression.end.mjs",
+        "punctuation.definition.template-expression.begin.cjs",
+        "punctuation.definition.template-expression.end.cjs",
+        "punctuation.definition.template-expression.begin.jsx",
+        "punctuation.definition.template-expression.end.jsx",
+        "punctuation.definition.template-expression.begin.ts",
+        "punctuation.definition.template-expression.end.ts",
+        "punctuation.definition.template-expression.begin.mts",
+        "punctuation.definition.template-expression.end.mts",
+        "punctuation.definition.template-expression.begin.cts",
+        "punctuation.definition.template-expression.end.cts",
+        "punctuation.definition.template-expression.begin.tsx",
+        "punctuation.definition.template-expression.end.tsx"
+      ],
+      "settings": {
+        "foreground": "#2f54eb",
         "fontStyle": ""
       }
     },
@@ -1212,17 +1267,6 @@
       }
     },
     {
-      "name": "(j|t)sx::punctuation",
-      "scope": [
-        "keyword.control.type.jsx",
-        "keyword.control.type.tsx"
-      ],
-      "settings": {
-        "foreground": "#10239e",
-        "fontStyle": ""
-      }
-    },
-    {
       "name": "(j|t)sx::tag",
       "scope": [
         "entity.name.tag.jsx",
@@ -1335,6 +1379,82 @@
       "settings": {
         "foreground": "#fa541c",
         "fontStyle": ""
+      }
+    },
+    {
+      "name": "(c|m)(j|t)s(x)::regexp::shash",
+      "scope": [
+        "punctuation.definition.string.begin.js",
+        "punctuation.definition.string.end.js",
+        "punctuation.definition.string.begin.mjs",
+        "punctuation.definition.string.end.mjs",
+        "punctuation.definition.string.begin.cjs",
+        "punctuation.definition.string.end.cjs",
+        "punctuation.definition.string.begin.jsx",
+        "punctuation.definition.string.end.jsx",
+        "punctuation.definition.string.begin.ts",
+        "punctuation.definition.string.end.ts",
+        "punctuation.definition.string.begin.mts",
+        "punctuation.definition.string.end.mts",
+        "punctuation.definition.string.begin.cts",
+        "punctuation.definition.string.end.cts",
+        "punctuation.definition.string.begin.tsx",
+        "punctuation.definition.string.end.tsx"
+      ],
+      "settings": {
+        "foreground": "#2f54eb",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "(c|m)(j|t)s(x)::regexp",
+      "scope": [
+        "punctuation.definition.character-class"
+      ],
+      "settings": {
+        "foreground": "#1d39c4",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "(c|m)(j|t)s(x)::regexp",
+      "scope": [
+        "punctuation.definition.group.regexp",
+        "\tkeyword.operator.or.regexp"
+      ],
+      "settings": {
+        "foreground": "#10239e",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "constant.other.character-class.set",
+      "scope": [
+        "constant.other.character-class.set.regexp"
+      ],
+      "settings": {
+        "foreground": "#d6e4ff",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "constant.other.character-class.set",
+      "scope": [
+        "meta.group.regexp"
+      ],
+      "settings": {
+        "foreground": "#f0f5ff",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "keyword.control.anchor",
+      "scope": [
+        "keyword.control.anchor.regexp"
+      ],
+      "settings": {
+        "foreground": "#fff2e8",
+        "fontStyle": "bold"
       }
     },
     {

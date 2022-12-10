@@ -34,10 +34,10 @@ const xScopes: RawAtomTheme[] = [
     fontStyle: ''
   },
   {
-    name: '(j|t)sx::punctuation',
+    name: 'import type',
     scope: [],
     rawScope: ['keyword.control.type'],
-    foreground: mapColorsWithRuntimeWeightFn('800'),
+    foreground: mapColorsReverseWithRuntimeWeightFn('800'),
     fontStyle: ''
   },
   {

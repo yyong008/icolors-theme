@@ -33,13 +33,7 @@ const xScopes: RawAtomTheme[] = [
     foreground: mapColorsWithRuntimeWeightFn('800'),
     fontStyle: ''
   },
-  {
-    name: '(j|t)sx::punctuation',
-    scope: [],
-    rawScope: ['keyword.control.type'],
-    foreground: mapColorsReverseWithRuntimeWeightFn('800'),
-    fontStyle: ''
-  },
+
   {
     name: '(j|t)sx::tag',
     scope: [],

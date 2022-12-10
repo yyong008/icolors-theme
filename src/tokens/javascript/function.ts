@@ -16,8 +16,8 @@ const functionScopes: RawAtomTheme[] = [
     name: '(c|m)(j|t)s(x)::functionName',
     scope: [],
     rawScope: ['entity.name.function'],
-    foreground: mapColorsWithRuntimeWeightFn('700'),
-    fontStyle: ''
+    foreground: mapColorsWithRuntimeWeightFn('800'),
+    fontStyle: 'bold'
   },
   {
     name: '(c|m)(j|t)s(x)::functionParams',
