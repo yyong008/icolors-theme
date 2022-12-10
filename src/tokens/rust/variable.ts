@@ -1,6 +1,7 @@
 import type { RawAtomTheme } from '../common'
 
 import colors, {
+  mapColorsWithRuntimeWeightFn,
   mapColorsReverseWithRuntimeWeightFn
 } from '../../designs/index'
 import { gnAtomThemeFns } from '../common'
@@ -24,6 +25,13 @@ const variableScopes: RawAtomTheme[] = [
     rawScope: ['storage.modifier.mut'],
     foreground: mapColorsReverseWithRuntimeWeightFn('800'),
     fontStyle: 'bold'
+  },
+  {
+    name: 'rust:variable.language.self',
+    scope: [],
+    rawScope: ['variable.language.self'],
+    foreground: mapColorsWithRuntimeWeightFn('800'),
+    fontStyle: 'italic bold'
   }
 ]
 

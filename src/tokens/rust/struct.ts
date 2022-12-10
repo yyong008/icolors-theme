@@ -8,10 +8,7 @@ const structScopes: RawAtomTheme[] = [
   {
     name: 'rust::{str, String}',
     scope: [],
-    rawScope: [
-      // impl keyword
-      'keyword.other'
-    ],
+    rawScope: ['storage.type', 'keyword.declaration.struct'],
     foreground: mapColorsReverseWithRuntimeWeightFn('500'),
     fontStyle: 'bold'
   }

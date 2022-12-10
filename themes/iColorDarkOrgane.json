@@ -35,7 +35,7 @@
     "commandCenter.border": "#fa8c16",
     "commandCenter.inactiveForeground": "#fa8c16",
     "commandCenter.inactiveBorder": "#ffa940",
-    "debugToolBar.background": "#ffffff",
+    "debugToolBar.background": "#141414",
     "diffEditor.insertedTextBackground": "#4b661680",
     "diffEditor.removedTextBackground": "#90274A70",
     "dropdown.listBackground": "#262626",
@@ -2334,6 +2334,16 @@
       }
     },
     {
+      "name": "rust:variable.language.self",
+      "scope": [
+        "variable.language.self.rust"
+      ],
+      "settings": {
+        "foreground": "#ad4e00",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
       "name": "rust::{str, String}",
       "scope": [
         "string.quoted.double.rust",
@@ -2404,21 +2414,12 @@
     {
       "name": "rust::{str, String}",
       "scope": [
-        "keyword.other.rust"
+        "storage.type.rust",
+        "keyword.declaration.struct.rust"
       ],
       "settings": {
         "foreground": "#9254de",
         "fontStyle": "bold"
-      }
-    },
-    {
-      "name": "rust::keyword.control",
-      "scope": [
-        "keyword.control.rust"
-      ],
-      "settings": {
-        "foreground": "#ad4e00",
-        "fontStyle": ""
       }
     },
     {
@@ -2460,7 +2461,10 @@
         "keyword.control.switch.rust",
         "keyword.operator.borrow.and.rust",
         "keyword.operator.assignment.equal.rust",
-        "keyword.operator.arrow.skinny.rust"
+        "keyword.operator.arrow.skinny.rust",
+        "keyword.operator.math.rust",
+        "keyword.operator.question.rust",
+        "meta.interpolation.rust"
       ],
       "settings": {
         "foreground": "#9254de",
@@ -2470,8 +2474,7 @@
     {
       "name": "rust::typeSystem",
       "scope": [
-        "entity.name.type.rust",
-        "storage.type.rust"
+        "entity.name.type.rust"
       ],
       "settings": {
         "foreground": "#ffa940",
@@ -2484,14 +2487,15 @@
         "entity.name.function.macro.rust"
       ],
       "settings": {
-        "foreground": "#d46b08",
+        "foreground": "#22075e",
         "fontStyle": "bold"
       }
     },
     {
       "name": "rust::lifetime",
       "scope": [
-        "punctuation.definition.lifetime.rust"
+        "punctuation.definition.lifetime.rust",
+        "\tentity.name.type.lifetime.rust"
       ],
       "settings": {
         "foreground": "#faad14",
@@ -2505,6 +2509,26 @@
       ],
       "settings": {
         "foreground": "#722ed1",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "(c|m)(j|t)s(x)::generic",
+      "scope": [
+        "punctuation.brackets.angle.rust"
+      ],
+      "settings": {
+        "foreground": "#595959",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "(c|m)(j|t)s(x)::match::arrow::fat",
+      "scope": [
+        "keyword.operator.arrow.fat.rust"
+      ],
+      "settings": {
+        "foreground": "#08979c",
         "fontStyle": ""
       }
     },

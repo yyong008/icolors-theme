@@ -1,6 +1,6 @@
 import type { RawAtomTheme } from '../common'
 
-import { mapColorsWithRuntimeWeightFn } from '../../designs/index'
+import { mapColorsReverseWithRuntimeWeightFn } from '../../designs/index'
 import { gnAtomThemeFns } from '../common'
 import { rustTypes } from '../constants'
 
@@ -9,7 +9,7 @@ const macroScopes: RawAtomTheme[] = [
     name: 'rust::marco',
     scope: [],
     rawScope: ['entity.name.function.macro'],
-    foreground: mapColorsWithRuntimeWeightFn('700'),
+    foreground: mapColorsReverseWithRuntimeWeightFn('900'),
     fontStyle: 'bold'
   }
 ]

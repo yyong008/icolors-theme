@@ -34,7 +34,10 @@ const operatorScopes: RawAtomTheme[] = [
       'keyword.control.switch',
       'keyword.operator.borrow.and',
       'keyword.operator.assignment.equal',
-      'keyword.operator.arrow.skinny'
+      'keyword.operator.arrow.skinny',
+      'keyword.operator.math',
+      'keyword.operator.question',
+      'meta.interpolation'
     ],
     foreground: mapColorsReverseWithRuntimeWeightFn('500'),
     fontStyle: 'bold'

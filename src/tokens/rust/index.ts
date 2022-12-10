@@ -6,13 +6,13 @@ import comment from './comment'
 import attr from './attribute'
 import moduleFn from './module'
 import struct from './struct'
-import control from './control'
 import escape from './escape'
 import operator from './operator'
 import typeSystem from './type-system'
 import macro from './macro'
 import life from './life'
 import loop from './loop'
+import punctuation from './punctuation'
 
 export default function rustLanuage() {
   return [
@@ -24,12 +24,12 @@ export default function rustLanuage() {
     ...attr,
     ...moduleFn,
     ...struct,
-    ...control,
     ...escape,
     ...operator,
     ...typeSystem,
     ...macro,
     ...life,
-    ...loop
+    ...loop,
+    ...punctuation
   ]
 }

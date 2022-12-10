@@ -8,7 +8,7 @@ const keywordScopes: RawAtomTheme[] = [
   {
     name: 'rust::lifetime',
     scope: [],
-    rawScope: ['punctuation.definition.lifetime'],
+    rawScope: ['punctuation.definition.lifetime', '	entity.name.type.lifetime'],
     foreground: mapColorsReverseWithRuntimeWeight('600'),
     fontStyle: 'bold'
   }

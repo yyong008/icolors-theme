@@ -8,7 +8,7 @@ const typeSystemScopes: RawAtomTheme[] = [
   {
     name: 'rust::typeSystem',
     scope: [],
-    rawScope: ['entity.name.type', 'storage.type'],
+    rawScope: ['entity.name.type'],
     foreground: mapColorsWithRuntimeWeightFn('500'),
     fontStyle: 'bold'
   }

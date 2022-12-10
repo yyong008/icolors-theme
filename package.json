@@ -1,7 +1,7 @@
 {
   "name": "i-colors",
   "displayName": "iColors",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "A VS Ccode theme with level color system",
   "type": "module",
   "engines": {
