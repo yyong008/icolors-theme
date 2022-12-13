@@ -2563,7 +2563,7 @@
         "comment.line.number-sign.toml"
       ],
       "settings": {
-        "foreground": "#595959",
+        "foreground": "#bfbfbf",
         "fontStyle": "italic"
       }
     },

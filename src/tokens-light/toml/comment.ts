@@ -9,7 +9,7 @@ const commentScopes: RawAtomTheme[] = [
     name: 'toml::comment',
     scope: [],
     rawScope: ['punctuation.definition.comment', 'comment.line.number-sign'],
-    foreground: mapColors('grayColors800'),
+    foreground: mapColors('grayColors600'),
     fontStyle: 'italic'
   }
 ]
