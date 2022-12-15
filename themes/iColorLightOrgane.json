@@ -588,7 +588,7 @@
         "constant.language.undefined.tsx"
       ],
       "settings": {
-        "foreground": "#873800",
+        "foreground": "#22075e",
         "fontStyle": "bold"
       }
     },
@@ -2617,7 +2617,7 @@
         "constant.language.tab.editorconfig"
       ],
       "settings": {
-        "foreground": "#d46b08",
+        "foreground": "#531dab",
         "fontStyle": "bold"
       }
     },

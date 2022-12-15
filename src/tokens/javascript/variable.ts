@@ -1,6 +1,9 @@
 import type { RawAtomTheme } from '../common'
 
-import colors, { mapColorsWithRuntimeWeightFn } from '../../designs/index'
+import colors, {
+  mapColorsReverseWithRuntimeWeight,
+  mapColorsWithRuntimeWeightFn
+} from '../../designs/index'
 import { gnAtomThemeFns } from '../common'
 import { jsTypes } from '../constants'
 
@@ -43,7 +46,7 @@ const variableScopes: RawAtomTheme[] = [
       'constant.language.null',
       'constant.language.undefined'
     ],
-    foreground: mapColorsWithRuntimeWeightFn('900'),
+    foreground: mapColorsReverseWithRuntimeWeight('600'),
     fontStyle: 'bold'
   },
   {

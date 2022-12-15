@@ -602,7 +602,7 @@
         "constant.language.undefined.tsx"
       ],
       "settings": {
-        "foreground": "#061178",
+        "foreground": "#faad14",
         "fontStyle": "bold"
       }
     },
@@ -1138,6 +1138,31 @@
         "punctuation.terminator.statement.cts",
         "punctuation.separator.comma.tsx",
         "punctuation.terminator.statement.tsx"
+      ],
+      "settings": {
+        "foreground": "#f5f5f5",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "(c|m)(j|t)s(x)::separator::key-value",
+      "scope": [
+        "punctuation.separator.key-value.js",
+        "\tkeyword.operator.type.annotation.js",
+        "punctuation.separator.key-value.mjs",
+        "\tkeyword.operator.type.annotation.mjs",
+        "punctuation.separator.key-value.cjs",
+        "\tkeyword.operator.type.annotation.cjs",
+        "punctuation.separator.key-value.jsx",
+        "\tkeyword.operator.type.annotation.jsx",
+        "punctuation.separator.key-value.ts",
+        "\tkeyword.operator.type.annotation.ts",
+        "punctuation.separator.key-value.mts",
+        "\tkeyword.operator.type.annotation.mts",
+        "punctuation.separator.key-value.cts",
+        "\tkeyword.operator.type.annotation.cts",
+        "punctuation.separator.key-value.tsx",
+        "\tkeyword.operator.type.annotation.tsx"
       ],
       "settings": {
         "foreground": "#f5f5f5",

@@ -46,7 +46,7 @@ const variableScopes: RawAtomTheme[] = [
       'constant.language.null',
       'constant.language.undefined'
     ],
-    foreground: mapColorsWithRuntimeWeightFn('900'),
+    foreground: mapColorsReverseWithRuntimeWeightFn('900'),
     fontStyle: 'bold'
   },
   {

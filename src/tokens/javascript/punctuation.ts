@@ -31,6 +31,16 @@ const punctuationScopes: RawAtomTheme[] = [
     ],
     foreground: colors.grayColors300,
     fontStyle: ''
+  },
+  {
+    name: '(c|m)(j|t)s(x)::separator::key-value',
+    scope: [],
+    rawScope: [
+      'punctuation.separator.key-value',
+      '	keyword.operator.type.annotation'
+    ],
+    foreground: colors.grayColors300,
+    fontStyle: ''
   }
 ]
 

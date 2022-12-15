@@ -36,7 +36,7 @@ const keyValueScopes: RawAtomTheme[] = [
       'constant.language.charset.encoding.utf-8',
       'constant.language.tab'
     ],
-    foreground: mapColorsWithRuntimeWeightFn('700'),
+    foreground: mapColorsReverseWithRuntimeWeightFn('700'),
     fontStyle: 'bold'
   },
   {
