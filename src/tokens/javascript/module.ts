@@ -31,21 +31,21 @@ const moduleScopes: RawAtomTheme[] = [
     name: '(c|m)(j|t)s(x)::module::from::alias',
     scope: ['variable.other.readwrite.alias', 'variable.other.object'],
     rawScope: ['meta.import'],
-    foreground: mapColorsWithRuntimeWeightFn('600'),
+    foreground: mapColorsWithRuntimeWeightFn('400'),
     fontStyle: ''
   },
   {
     name: '(c|m)(j|t)s(x)::module::dynamic::import',
     scope: ['keyword.operator.expression.import'],
     rawScope: ['meta.import'],
-    foreground: mapColorsReverseWithRuntimeWeightFn('800'),
+    foreground: mapColorsReverseWithRuntimeWeightFn('400'),
     fontStyle: ''
   },
   {
     name: 'import type',
     scope: [],
     rawScope: ['keyword.control.type'],
-    foreground: mapColorsReverseWithRuntimeWeightFn('800'),
+    foreground: mapColorsReverseWithRuntimeWeightFn('500'),
     fontStyle: ''
   }
 ]

@@ -26,7 +26,7 @@ const variableScopes: RawAtomTheme[] = [
     name: '(c|m)(j|t)s(x)::variable.object.constant',
     scope: [],
     rawScope: ['variable.other.readwrite'],
-    foreground: mapColorsWithRuntimeWeightFn('700'),
+    foreground: mapColorsWithRuntimeWeightFn('300'),
     fontStyle: ''
   },
   {
@@ -46,14 +46,14 @@ const variableScopes: RawAtomTheme[] = [
       'constant.language.null',
       'constant.language.undefined'
     ],
-    foreground: mapColorsReverseWithRuntimeWeight('600'),
+    foreground: mapColorsReverseWithRuntimeWeight('400'),
     fontStyle: 'bold'
   },
   {
     name: '(c|m)(j|t)s(x)::variable::other.property',
     scope: [],
     rawScope: ['variable.other.property'],
-    foreground: mapColorsWithRuntimeWeightFn('700'),
+    foreground: mapColorsWithRuntimeWeightFn('500'),
     fontStyle: 'bold'
   }
 ]

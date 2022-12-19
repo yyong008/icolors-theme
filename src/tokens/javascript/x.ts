@@ -12,14 +12,14 @@ const xScopes: RawAtomTheme[] = [
     name: '(j|t)sx::tagName',
     scope: [],
     rawScope: ['entity.name.tag'],
-    foreground: mapColorsWithRuntimeWeightFn('600'),
+    foreground: mapColorsWithRuntimeWeightFn('400'),
     fontStyle: ''
   },
   {
     name: '(j|t)sx::tagProps',
     scope: [],
     rawScope: ['entity.other.attribute-name'],
-    foreground: mapColorsWithRuntimeWeightFn('600'),
+    foreground: mapColorsWithRuntimeWeightFn('500'),
     fontStyle: ''
   },
   {
@@ -30,15 +30,15 @@ const xScopes: RawAtomTheme[] = [
       'punctuation.definition.tag.end',
       'punctuation.separator.key-value'
     ],
-    foreground: mapColorsWithRuntimeWeightFn('800'),
+    foreground: mapColorsWithRuntimeWeightFn('300'),
     fontStyle: ''
   },
 
   {
     name: '(j|t)sx::tag',
     scope: [],
-    rawScope: ['entity.name.tag', 'entity.name.tag.js'],
-    foreground: mapColorsWithRuntimeWeightFn('700'),
+    rawScope: ['entity.name.tag', 'entity.name.tag'],
+    foreground: mapColorsWithRuntimeWeightFn('500'),
     fontStyle: 'bold'
   },
   {

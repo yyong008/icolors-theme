@@ -15,7 +15,7 @@ const regexpScopes: RawAtomTheme[] = [
       'punctuation.definition.string.begin',
       'punctuation.definition.string.end'
     ],
-    foreground: mapColorsReverseWithRuntimeWeightFn('600'),
+    foreground: mapColorsWithRuntimeWeightFn('600'),
     fontStyle: ''
   },
   {

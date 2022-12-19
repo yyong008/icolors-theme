@@ -265,7 +265,7 @@
         "meta.import.tsx"
       ],
       "settings": {
-        "foreground": "#fadb14",
+        "foreground": "#fff566",
         "fontStyle": ""
       }
     },
@@ -283,7 +283,7 @@
         "meta.import.tsx"
       ],
       "settings": {
-        "foreground": "#9e1068",
+        "foreground": "#ff85c0",
         "fontStyle": ""
       }
     },
@@ -300,7 +300,7 @@
         "keyword.control.type.tsx"
       ],
       "settings": {
-        "foreground": "#9e1068",
+        "foreground": "#f759ab",
         "fontStyle": ""
       }
     },
@@ -359,7 +359,7 @@
         "storage.type.function.tsx"
       ],
       "settings": {
-        "foreground": "#b37feb",
+        "foreground": "#f759ab",
         "fontStyle": "bold"
       }
     },
@@ -376,7 +376,7 @@
         "entity.name.function.tsx"
       ],
       "settings": {
-        "foreground": "#ad8b00",
+        "foreground": "#ffec3d",
         "fontStyle": "bold"
       }
     },
@@ -427,7 +427,7 @@
         "meta.function-call.tsx"
       ],
       "settings": {
-        "foreground": "#d4b106",
+        "foreground": "#fff566",
         "fontStyle": ""
       }
     },
@@ -536,7 +536,7 @@
         "variable.other.readwrite.tsx"
       ],
       "settings": {
-        "foreground": "#d4b106",
+        "foreground": "#fffb8f",
         "fontStyle": ""
       }
     },
@@ -602,7 +602,7 @@
         "constant.language.undefined.tsx"
       ],
       "settings": {
-        "foreground": "#faad14",
+        "foreground": "#ffd666",
         "fontStyle": "bold"
       }
     },
@@ -619,7 +619,7 @@
         "variable.other.property.tsx"
       ],
       "settings": {
-        "foreground": "#d4b106",
+        "foreground": "#ffec3d",
         "fontStyle": "bold"
       }
     },
@@ -1005,8 +1005,8 @@
         "storage.type.class.tsx"
       ],
       "settings": {
-        "foreground": "#d4b106",
-        "fontStyle": ""
+        "foreground": "#fff566",
+        "fontStyle": "bold"
       }
     },
     {
@@ -1022,7 +1022,7 @@
         "entity.name.type.class.tsx"
       ],
       "settings": {
-        "foreground": "#fadb14",
+        "foreground": "#ffec3d",
         "fontStyle": ""
       }
     },
@@ -1261,7 +1261,7 @@
         "entity.name.tag.tsx"
       ],
       "settings": {
-        "foreground": "#fadb14",
+        "foreground": "#fff566",
         "fontStyle": ""
       }
     },
@@ -1272,7 +1272,7 @@
         "entity.other.attribute-name.tsx"
       ],
       "settings": {
-        "foreground": "#fadb14",
+        "foreground": "#ffec3d",
         "fontStyle": ""
       }
     },
@@ -1287,7 +1287,7 @@
         "punctuation.separator.key-value.tsx"
       ],
       "settings": {
-        "foreground": "#ad8b00",
+        "foreground": "#fffb8f",
         "fontStyle": ""
       }
     },
@@ -1295,12 +1295,12 @@
       "name": "(j|t)sx::tag",
       "scope": [
         "entity.name.tag.jsx",
-        "entity.name.tag.js.jsx",
+        "entity.name.tag.jsx",
         "entity.name.tag.tsx",
-        "entity.name.tag.js.tsx"
+        "entity.name.tag.tsx"
       ],
       "settings": {
-        "foreground": "#d4b106",
+        "foreground": "#ffec3d",
         "fontStyle": "bold"
       }
     },
@@ -1344,59 +1344,101 @@
     {
       "name": "(j|t)sx::type.primitive",
       "scope": [
+        "support.type.primitive.js",
+        "entity.name.type.js",
+        "entity.name.type.alias.js",
+        "support.type.primitive.mjs",
+        "entity.name.type.mjs",
+        "entity.name.type.alias.mjs",
+        "support.type.primitive.cjs",
+        "entity.name.type.cjs",
+        "entity.name.type.alias.cjs",
         "support.type.primitive.jsx",
         "entity.name.type.jsx",
         "entity.name.type.alias.jsx",
+        "support.type.primitive.ts",
+        "entity.name.type.ts",
+        "entity.name.type.alias.ts",
+        "support.type.primitive.mts",
+        "entity.name.type.mts",
+        "entity.name.type.alias.mts",
+        "support.type.primitive.cts",
+        "entity.name.type.cts",
+        "entity.name.type.alias.cts",
         "support.type.primitive.tsx",
         "entity.name.type.tsx",
         "entity.name.type.alias.tsx"
       ],
       "settings": {
-        "foreground": "#fadb14",
+        "foreground": "#ffec3d",
         "fontStyle": "bold"
       }
     },
     {
       "name": "(j|t)sx::type.buildin",
       "scope": [
+        "support.type.builtin.js",
+        "support.type.builtin.mjs",
+        "support.type.builtin.cjs",
         "support.type.builtin.jsx",
+        "support.type.builtin.ts",
+        "support.type.builtin.mts",
+        "support.type.builtin.cts",
         "support.type.builtin.tsx"
       ],
       "settings": {
-        "foreground": "#d4b106",
+        "foreground": "#fff566",
         "fontStyle": "bold"
       }
     },
     {
       "name": "(j|t)sx::type.key",
       "scope": [
+        "storage.type.type.js",
+        "storage.type.type.mjs",
+        "storage.type.type.cjs",
         "storage.type.type.jsx",
+        "storage.type.type.ts",
+        "storage.type.type.mts",
+        "storage.type.type.cts",
         "storage.type.type.tsx"
       ],
       "settings": {
-        "foreground": "#eb2f96",
+        "foreground": "#ff85c0",
         "fontStyle": "bold italic"
       }
     },
     {
       "name": "(j|t)sx::type.declare",
       "scope": [
+        "storage.modifier.js",
+        "storage.modifier.mjs",
+        "storage.modifier.cjs",
         "storage.modifier.jsx",
+        "storage.modifier.ts",
+        "storage.modifier.mts",
+        "storage.modifier.cts",
         "storage.modifier.tsx"
       ],
       "settings": {
-        "foreground": "#d4b106",
+        "foreground": "#fff566",
         "fontStyle": ""
       }
     },
     {
       "name": "(j|t)sx::namespace::name",
       "scope": [
+        "entity.name.type.module.js",
+        "entity.name.type.module.mjs",
+        "entity.name.type.module.cjs",
         "entity.name.type.module.jsx",
+        "entity.name.type.module.ts",
+        "entity.name.type.module.mts",
+        "entity.name.type.module.cts",
         "entity.name.type.module.tsx"
       ],
       "settings": {
-        "foreground": "#876800",
+        "foreground": "#ffffb8",
         "fontStyle": "bold"
       }
     },
@@ -1451,7 +1493,7 @@
         "punctuation.definition.string.end.tsx"
       ],
       "settings": {
-        "foreground": "#eb2f96",
+        "foreground": "#fadb14",
         "fontStyle": ""
       }
     },

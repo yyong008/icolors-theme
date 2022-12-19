@@ -12,14 +12,14 @@ const functionScopes: RawAtomTheme[] = [
     name: '(c|m)(j|t)s(x)::functionKeyword',
     scope: [],
     rawScope: ['storage.type.function'],
-    foreground: colors.purpleColors400,
+    foreground: mapColorsReverseWithRuntimeWeightFn('500'),
     fontStyle: 'bold'
   },
   {
     name: '(c|m)(j|t)s(x)::functionName',
     scope: [],
     rawScope: ['entity.name.function'],
-    foreground: mapColorsWithRuntimeWeightFn('800'),
+    foreground: mapColorsWithRuntimeWeightFn('500'),
     fontStyle: 'bold'
   },
   {
@@ -40,7 +40,7 @@ const functionScopes: RawAtomTheme[] = [
     name: '(c|m)(j|t)s(x)::functionCall',
     scope: [],
     rawScope: ['meta.function-call'],
-    foreground: mapColorsWithRuntimeWeightFn('700'),
+    foreground: mapColorsWithRuntimeWeightFn('400'),
     fontStyle: ''
   }
 ]

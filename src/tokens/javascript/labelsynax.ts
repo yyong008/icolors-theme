@@ -1,6 +1,7 @@
 import type { RawAtomTheme } from '../common'
 
 import colors from '../../designs/index'
+
 import { gnAtomThemeFns } from '../common'
 import { jsTypes } from '../constants'
 

@@ -1,8 +1,11 @@
 import type { RawAtomTheme } from '../common'
 
-import colors, { mapColorsWithRuntimeWeightFn } from '../../designs/index'
+import {
+  mapColorsWithRuntimeWeightFn,
+  mapColorsReverseWithRuntimeWeightFn
+} from '../../designs/index'
 import { gnAtomThemeFns } from '../common'
-import { jsxTypes } from '../constants'
+import { jsTypes } from '../constants'
 
 const typeSystemScopes: RawAtomTheme[] = [
   {
@@ -13,37 +16,37 @@ const typeSystemScopes: RawAtomTheme[] = [
       'entity.name.type',
       'entity.name.type.alias'
     ],
-    foreground: mapColorsWithRuntimeWeightFn('600'),
+    foreground: mapColorsWithRuntimeWeightFn('500'),
     fontStyle: 'bold'
   },
   {
     name: '(j|t)sx::type.buildin',
     scope: [],
     rawScope: ['support.type.builtin'],
-    foreground: mapColorsWithRuntimeWeightFn('700'),
+    foreground: mapColorsWithRuntimeWeightFn('400'),
     fontStyle: 'bold'
   },
   {
     name: '(j|t)sx::type.key',
     scope: [],
     rawScope: ['storage.type.type'],
-    foreground: colors.magentaColors600,
+    foreground: mapColorsReverseWithRuntimeWeightFn('400'),
     fontStyle: 'bold italic'
   },
   {
     name: '(j|t)sx::type.declare',
     scope: [],
     rawScope: ['storage.modifier'],
-    foreground: mapColorsWithRuntimeWeightFn('700'),
+    foreground: mapColorsWithRuntimeWeightFn('400'),
     fontStyle: ''
   },
   {
     name: '(j|t)sx::namespace::name',
     scope: [],
     rawScope: ['entity.name.type.module'],
-    foreground: mapColorsWithRuntimeWeightFn('900'),
+    foreground: mapColorsWithRuntimeWeightFn('200'),
     fontStyle: 'bold'
   }
 ]
 
-export default gnAtomThemeFns(typeSystemScopes, jsxTypes)
+export default gnAtomThemeFns(typeSystemScopes, jsTypes)
